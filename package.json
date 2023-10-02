@@ -3,6 +3,7 @@
   "private": true,
   "name": "Waleed-Gul-Portfolio",
   "homepage": "https://waleedgul92.github.io",
+  
   "version": "0.1.0",
   "scripts": {
     "build": "react-scripts build",
@@ -69,4 +70,7 @@
     "*.json": "prettier-package-json --write",
     "*.{js,css,md}": "prettier --write"
   }
-}
+},
+"engines": {
+  "node": "16.x"
+},
