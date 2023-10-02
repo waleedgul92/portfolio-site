@@ -37,29 +37,29 @@ function SeoHeader() {
       description: certification.subtitle,
     });
   });
-  const data = {
-    "@context": "https://schema.org/",
-    "@type": "Person",
-    name: greeting.title,
-    url: seo?.og?.url,
-    email: mail,
-    telephone: contactPageData.phoneSection?.subtitle,
-    sameAs: sameAs,
-    jobTitle: job.title,
-    worksFor: {
-      "@type": "Organization",
-      name: job.company,
-    },
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: contactPageData.addressSection?.locality,
-      addressRegion: contactPageData.addressSection?.region,
-      addressCountry: contactPageData.addressSection?.country,
-      postalCode: contactPageData.addressSection?.postalCode,
-      streetAddress: contactPageData.addressSection?.streetAddress,
-    },
-    hasCredential: credentials,
-  };
+  // const data = {
+  //   "@context": "https://schema.org/",
+  //   "@type": "Person",
+  //   name: greeting.title,
+  //   url: seo?.og?.url,
+  //   email: mail,
+  //   telephone: contactPageData.phoneSection?.subtitle,
+  //   sameAs: sameAs,
+    // jobTitle: job.title,
+    // worksFor: {
+    //   "@type": "Organization",
+    //   name: job.company,
+    // },
+    // address: {
+    //   "@type": "PostalAddress",
+    //   addressLocality: contactPageData.addressSection?.locality,
+    //   addressRegion: contactPageData.addressSection?.region,
+    //   addressCountry: contactPageData.addressSection?.country,
+    //   postalCode: contactPageData.addressSection?.postalCode,
+    //   streetAddress: contactPageData.addressSection?.streetAddress,
+    // },
+    // hasCredential: credentials,
+  // };
   return (
     <Helmet>
       <title>{seo.title}</title>
@@ -67,7 +67,7 @@ function SeoHeader() {
       <meta property="og:title" content={seo?.og?.title} />
       <meta property="og:type" content={seo?.og?.type} />
       <meta property="og:url" content={seo?.og?.url} />
-      <script type="application/ld+json">{JSON.stringify(data)}</script>
+      {/* <script type="application/ld+json">{JSON.stringify(data)}</script> */}
     </Helmet>
   );
 }

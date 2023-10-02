@@ -272,20 +272,20 @@ const skills = {
             color: "#4285F4",
           },
         },
-        {
-          skillName: "AWS",
-          fontAwesomeClassname: "simple-icons:amazonaws",
-          style: {
-            color: "#FF9900",
-          },
-        },
-        {
-          skillName: "Azure",
-          fontAwesomeClassname: "simple-icons:microsoftazure",
-          style: {
-            color: "#0089D6",
-          },
-        },
+        // {
+        //   skillName: "AWS",
+        //   fontAwesomeClassname: "simple-icons:amazonaws",
+        //   style: {
+        //     color: "#FF9900",
+        //   },
+        // },
+        // {
+        //   skillName: "Azure",
+        //   fontAwesomeClassname: "simple-icons:microsoftazure",
+        //   style: {
+        //     color: "#0089D6",
+        //   },
+        // },
         {
           skillName: "Firebase",
           fontAwesomeClassname: "simple-icons:firebase",
@@ -580,21 +580,21 @@ const experience = {
     "I have worked with many evolving startups as Data Analyst.I love organising events and that is why I am also involved with many volunteer activities as a representative.",
   header_image_path: "experience.svg",
   sections: [
-    {
-      title: "Work",
-      work: true,
-      experiences: [
-        {
-          title: "Associate AI Engineer",
-          company: "Legato Health Technology",
-          company_url: "https://legatohealthtech.com/",
-          logo_path: "legato_logo.png",
-          duration: "June 2020 - Aug 2021",
-          location: "Hyderabad, Telangana",
-          description:
-            "I am working on automating healthcare products. The projects involve automation for process improvements and for significantly enhancing the profits. I am currently working on Cancer Survival and Reoccurence Prediction. Our goal is to make AI system which scales and removes doctor dependency as much as possible.",
-          color: "#0879bf",
-        },
+    // {
+      // title: "Work",
+      // work: false,
+      // experiences: [
+      //   {
+      //     title: "Associate AI Engineer",
+      //     company: "Legato Health Technology",
+      //     company_url: "https://legatohealthtech.com/",
+      //     logo_path: "legato_logo.png",
+      //     duration: "June 2020 - Aug 2021",
+      //     location: "Hyderabad, Telangana",
+      //     description:
+      //       "I am working on automating healthcare products. The projects involve automation for process improvements and for significantly enhancing the profits. I am currently working on Cancer Survival and Reoccurence Prediction. Our goal is to make AI system which scales and removes doctor dependency as much as possible.",
+      //     color: "#0879bf",
+      //   },
         // {
         //   title: "Android and ML Developer",
         //   company: "Muffito Incorporation",
@@ -617,8 +617,8 @@ const experience = {
         //     "FreeCopy is the Start up from Indian Institute of Management, Ahmedabad. I have changed the integration of the whole app from Google to Firebase. I learnt the efﬁcient ways of Data communications like Retroﬁt, Eventbus etc. I experienced the real time start up. I learnt the Design thinking of UI on perspective of People.",
         //   color: "#fc1f20",
         // },
-      ],
-    },
+    //   ],
+    // },
     {
       title: "Internships",
       experiences: [
