@@ -1,0 +1,14 @@
+<<<<<<< HEAD
+.github
+images
+node_modules
+build
+public
+=======
+.github
+images
+node_modules
+build
+public
+>>>>>>> 927addedd8d2d079fc0f151c2bc519748424b738
+*.json

@@ -1,0 +1,47 @@
+{
+  "data": [
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
+      "name": "Crop-Doc",
+      "createdAt": "2023-9-30T16:26:54Z",
+      "url": "https://github.com/waleedgul92/Crop-Doc/",
+      "description": "🌾 Developed a disease classification for cotton with accuracy of 99 percent.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Tensoflow",
+          "iconifyClass": "logos-tensorflow"
+        },
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Docker",
+          "iconifyClass": "logos-docker"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOG_vYHA",
+      "name": "Boats-Listing-Dataset",
+      "createdAt": "2022-03-31T20:41:33Z",
+      "url": "https://github.com/waleedgul92/Boats-Listing-Dataset",
+      "description": "🚤 Using Sciklearn did predict last 7 days views after extensive preprocessing.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Seaborn",
+          "iconifyClass": "logos-seaborn"
+        }
+      ]
+    }
+
+
+    
+  ]
+}

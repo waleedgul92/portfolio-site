@@ -1,0 +1,34 @@
+<<<<<<< HEAD
+version: '3.7'
+
+services:
+
+  sample:
+    container_name: portfolio
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 3001:3000
+    # environment:
+=======
+version: '3.7'
+
+services:
+
+  sample:
+    container_name: portfolio
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 3001:3000
+    # environment:
+>>>>>>> 927addedd8d2d079fc0f151c2bc519748424b738
+    #   - CHOKIDAR_USEPOLLING=true
