@@ -24,7 +24,7 @@
     },
     {
       "id": "R_kgDOG_vYHA",
-      "name": "Boats-Listing-Dataset",
+      "name": "Week-Ahead View Estimation",
       "createdAt": "2022-03-31T20:41:33Z",
       "url": "https://github.com/waleedgul92/Boats-Listing-Dataset",
       "description": "🚤 Using Sciklearn did predict last 7 days views after extensive preprocessing.",
