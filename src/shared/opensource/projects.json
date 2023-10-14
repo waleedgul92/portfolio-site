@@ -44,7 +44,7 @@
       "id": "R_kgDOG_vYHA",
       "name": "StyleGAN Monet",
       "createdAt": "2023-05-23T20:41:33Z",
-      "url": "https://www.kaggle.com/code/waleedgul/stylegan-monet/notebook",
+      "url": "https://github.com/waleedgul92/StyleGAN-Monet/blob/main/README.md",
       "description": "🖼️ Worked on a project to generate realistic images of Monet paintings using GANs.",
       "isFork": false,
       "languages": [
