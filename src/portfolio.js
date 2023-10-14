@@ -641,7 +641,7 @@ const experience = {
           duration: "Oct 2023 - Oot 2023",
           location: "London, UK",
           description:
-            "I have worked on project of predicting freight rates based on previous data. There were two objectives: (1) To build a forecasting engine to predict daily freight rates. (2) To embed feature in the model which can explain the seasonal major changes in freight rate based on regions and locations. I have closely worked with deep learning models in combination with statistical methods to create solution for this. At the end of internship, I had created model deployed on AWS EC2 with the use of Kafka stream jobs, ElasticSearch and PostgreSQL.",
+            "Worked on getting insights from data related booking using visualization and stats , later used random forest  to predict the chance of booking",
           color: "#ee3c26",
         },
         {
