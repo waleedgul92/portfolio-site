@@ -155,6 +155,16 @@
       "url": "https://github.com/waleedgul92/Super-Store-Sales-Dasboard-in-Power-Bi",
       "description": "Built a dashboard to visualize quantity sold, profit , sales ",
       "isFork": false,
+        "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Seaborn",
+          "iconifyClass": "logos-seaborn"
+        }
+      ]
       
     },
 
