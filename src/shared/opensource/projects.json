@@ -165,24 +165,7 @@
       
     },
 
-    {
-      "id": "R_kgDOG_vYHA",
-      "name": "FINANCIAL MARKET ANALYSIS",
-      "createdAt": "2022-08-23T20:41:33Z",
-      "url": "https://github.com/waleedgul92/FINANCIAL-MARKET-ANALYSIS",
-      "description": "Did EDA on data and comparision between Gold, S&P and inflation.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "Seaborn",
-          "iconifyClass": "logos-seaborn"
-        }
-      ]
-    }
+   
 
 
     
