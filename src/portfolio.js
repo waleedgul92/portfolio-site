@@ -282,13 +282,13 @@ const skills = {
             color: "#FF9900",
           },
         },
-        // {
-        //   skillName: "Azure",
-        //   fontAwesomeClassname: "simple-icons:microsoftazure",
-        //   style: {
-        //     color: "#0089D6",
-        //   },
-        // },
+        {
+          skillName: "Azure",
+          fontAwesomeClassname: "simple-icons:microsoftazure",
+          style: {
+            color: "#0089D6",
+          },
+        },
         {
           skillName: "Firebase",
           fontAwesomeClassname: "simple-icons:firebase",
