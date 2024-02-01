@@ -275,13 +275,13 @@ const skills = {
             color: "#4285F4",
           },
         },
-        // {
-        //   skillName: "AWS",
-        //   fontAwesomeClassname: "simple-icons:amazonaws",
-        //   style: {
-        //     color: "#FF9900",
-        //   },
-        // },
+        {
+          skillName: "AWS",
+          fontAwesomeClassname: "simple-icons:amazonaws",
+          style: {
+            color: "#FF9900",
+          },
+        },
         // {
         //   skillName: "Azure",
         //   fontAwesomeClassname: "simple-icons:microsoftazure",
