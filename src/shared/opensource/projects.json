@@ -157,13 +157,10 @@
       "isFork": false,
         "languages": [
         {
-          "name": "Python",
+          "name": "Power-Bi",
           "iconifyClass": "logos-python"
         },
-        {
-          "name": "Seaborn",
-          "iconifyClass": "logos-seaborn"
-        }
+        
       ]
       
     },
