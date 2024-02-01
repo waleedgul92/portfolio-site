@@ -158,7 +158,7 @@
         "languages": [
         {
           "name": "Power-Bi",
-          "iconifyClass": "bi:bar-chart"
+          "iconifyClass": "microsoft-power-bi"
         }
         
       ]
