@@ -28,7 +28,7 @@ const greeting = {
 
 
 
-    "https://drive.google.com/file/d/10zcvqjRqYHLX9y2AoRkF5Tv3EgH2mRRw/view?usp=sharing"
+    "https://drive.google.com/file/d/10zcvqjRqYHLX9y2AoRkF5Tv3EgH2mRRw/view?usp=sharing" ,
   // portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
   githubProfile: "https://github.com/waleedgul92",
 };
