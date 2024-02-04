@@ -108,24 +108,7 @@
       ]
       
     },
-    {
-      "id": "R_kgDOG_vYHA",
-      "name": "WildFire Prediction",
-      "createdAt": "2023-05-05T20:41:33Z",
-      "url": "https://github.com/waleedgul92/Boats-Listing-Dataset",
-      "description": "🔥 Developed a wildfire prediction model that predict chance of getting fire.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "Tensoflow",
-          "iconifyClass": "logos-tensorflow"
-        }
-      ]
-    },
+    
     {
       "id": "R_kgDOG_vYHA",
       "name": "PriceWise Walmart",
@@ -144,12 +127,12 @@
         }
       ]
     },
-    {
+   {
       "id": "R_kgDOG_vYHA",
-      "name": " CardSafe Europe",
-      "createdAt": "2023-01-30T20:41:33Z",
-      "url": "https://github.com/waleedgul92/CardSafe-Europe",
-      "description": " 💳 Did EDA on data and developed a model for classification of fraud.",
+      "name": "WildFire Prediction",
+      "createdAt": "2023-05-05T20:41:33Z",
+      "url": "https://github.com/waleedgul92/Boats-Listing-Dataset",
+      "description": "🔥 Developed a wildfire prediction model that predict chance of getting fire.",
       "isFork": false,
       "languages": [
         {
@@ -157,8 +140,8 @@
           "iconifyClass": "logos-python"
         },
         {
-          "name": "Seaborn",
-          "iconifyClass": "logos-seaborn"
+          "name": "Tensoflow",
+          "iconifyClass": "logos-tensorflow"
         }
       ]
     },
