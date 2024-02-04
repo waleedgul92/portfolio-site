@@ -42,7 +42,7 @@
     },
           {
       "id": "R_kgDOG_vYHA",
-      "name": "Super-Store-Sales-Dasboard-",
+      "name": "Super-Store-Sales-Dasboard",
       "createdAt": "2024-01-26T20:41:33Z",
       "url": "https://github.com/waleedgul92/Super-Store-Sales-Dasboard-in-Power-Bi",
       "description": "Built a dashboard to visualize quantity sold, profit , sales ",
@@ -91,6 +91,22 @@
           "iconifyClass": "logos-seaborn"
         }
       ]
+    },
+     {
+      "id": "R_kgDOG_vYHA",
+      "name": "E-Commerce-Sales-Dashboard",
+      "createdAt": "2024-01-19T20:41:33Z",
+      "url": "https://github.com/waleedgul92/E-Commerce-Sales-Dashboard-in-Power-Bi",
+      "description": "Developed a dashboard focusing profit ,Category and Sub-category ",
+      "isFork": false,
+        "languages": [
+        {
+          "name": "Power-Bi",
+          "iconifyClass": "simple-icons:powerbi"
+        }
+        
+      ]
+      
     },
     {
       "id": "R_kgDOG_vYHA",
