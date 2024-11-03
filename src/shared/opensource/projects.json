@@ -2,8 +2,8 @@
   "data": [
     {
       "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      "name": "Crop-Doc",
-      "createdAt": "LLM Fine Tuned for OCR-captcha",
+      "name": "LLM Fine Tuned for OCR-captcha",
+      "createdAt": "2024-6-3T16:26:54Z",
       "url": "https://github.com/waleedgul92/OCR-using-Fine-Tuning-LLM-on-custom-datatset",
       "description":"Fine Tuned OCR provided by Microsoft to solve captchas",
       "isFork": false,
@@ -16,10 +16,7 @@
           "name": "Python",
           "iconifyClass": "logos-python"
         },
-        {
-          "name": "Docker",
-          "iconifyClass": "logos-docker"
-        }
+        
       ]
     },
     {
@@ -38,10 +35,6 @@
           "name": "Python",
           "iconifyClass": "logos-python"
         },
-        {
-          "name": "Docker",
-          "iconifyClass": "logos-docker"
-        }
       ]
     },
     {
@@ -60,10 +53,7 @@
           "name": "Python",
           "iconifyClass": "logos-python"
         },
-        {
-          "name": "Docker",
-          "iconifyClass": "logos-docker"
-        }
+        
       ]
     },
     {
