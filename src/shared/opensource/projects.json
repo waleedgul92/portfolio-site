@@ -3,9 +3,9 @@
     {
       "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
       "name": "Crop-Doc",
-      "createdAt": "2023-9-30T16:26:54Z",
-      "url": "https://github.com/waleedgul92/Crop-Doc/",
-      "description": "🌾 Developed a disease classification for cotton with accuracy of 99 percent.",
+      "createdAt": "LLM Fine Tuned for OCR-captcha",
+      "url": "https://github.com/waleedgul92/OCR-using-Fine-Tuning-LLM-on-custom-datatset",
+      "description":"Fine Tuned OCR provided by Microsoft to solve captchas",
       "isFork": false,
       "languages": [
         {
