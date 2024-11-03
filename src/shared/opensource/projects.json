@@ -2,6 +2,28 @@
   "data": [
     {
       "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
+      "name": "DataBot-Data-Answer-Tool",
+      "createdAt": "2024-4-24T16:26:54Z",
+      "url": "https://github.com/waleedgul92/Crop-Doc/",
+      "description": "🌾 Developed a RAG based LLM to anwswer queries about data science mentioned in book ",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Tensoflow",
+          "iconifyClass": "logos-tensorflow"
+        },
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Docker",
+          "iconifyClass": "logos-docker"
+        }
+      ]
+    },
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
       "name": "Crop-Doc",
       "createdAt": "2023-9-30T16:26:54Z",
       "url": "https://github.com/waleedgul92/Crop-Doc/",
