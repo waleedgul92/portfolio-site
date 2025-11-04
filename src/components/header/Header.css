@@ -7,6 +7,12 @@
   margin: 0px auto;
 }
 
+.logo_header {
+  margin: 3px;
+  width: auto;
+  height: 145px;
+}
+
 .header ul {
   margin: 0;
   padding: 0;
@@ -25,6 +31,10 @@
   text-decoration: none;
 }
 
+.header li a:active {
+  color: pink;
+}
+
 .header li a:hover,
 .header .menu-btn:hover {
   /* background-color: #A6E1FA; */
@@ -39,7 +49,7 @@
   line-height: normal;
 }
 .header .logo-name {
-  font-family: "Agustina Regular";
+  font-family: "Google Sans Regular";
   font-weight: bold;
   padding: 0 10px;
   /* color: #55198b; */
@@ -69,7 +79,7 @@
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  background: rgb(255, 255, 255);
   display: block;
   height: 2px;
   position: relative;
@@ -79,7 +89,7 @@
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  background: rgb(255, 255, 255);
   content: "";
   display: block;
   height: 100%;

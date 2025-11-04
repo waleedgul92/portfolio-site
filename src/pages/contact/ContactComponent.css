@@ -17,7 +17,6 @@
 
 .address-heading-div {
   display: flex;
-  margin-top: 80px;
 }
 
 .blog-heading-div > * {
@@ -33,7 +32,6 @@
 }
 
 .contact-heading-img-div {
-  display: flex;
   align-items: center;
   justify-content: center;
 }

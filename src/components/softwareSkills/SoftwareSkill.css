@@ -4,7 +4,6 @@
   font-size: 3rem;
   margin-bottom: 0px;
   margin-top: 0px;
-  text-align: center;
 }
 
 .software-skill-inline {
@@ -22,6 +21,10 @@
   color: #645beb;
 }
 
-.skill-image {
-  height: 48px;
+/* Media Query */
+@media (max-width: 768px) {
+  .dev-icons {
+    margin-top: 60px;
+    text-align: center;
+  }
 }
