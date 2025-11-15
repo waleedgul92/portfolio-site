@@ -1,7 +1,7 @@
 import React, {Component } from "react";
 // import {useRef,useEffect } from "react";
 // import lottie from 'lottie-web';
-import data from "./img_ds.png"
+import data from "./ai.jpg"
 
 //for animated svgs use json file
 // export default function DataScienceImg(){
