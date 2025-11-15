@@ -12,6 +12,13 @@ import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
 
 class Projects extends Component {
+  // Function to handle image click
+  handleImageClick = (githubUrl) => {
+    if (githubUrl) {
+      window.open(githubUrl, "_blank", "noopener,noreferrer");
+    }
+  };
+
   render() {
     const theme = this.props.theme;
     return (
@@ -42,31 +49,47 @@ class Projects extends Component {
         </div>
         <div className="repo-cards-div-main">
           <CardColumns>
-            {projectcards.list.map((proj) => {
+            {projectcards.list.map((proj, index) => {
               return (
-                <Card className="h-100">
+                <Card className="h-100" key={index}>
                   <Card.Img
                     variant="top"
                     src={require(`../../assets/projects/${proj.img_path}`)}
+                    onClick={() => this.handleImageClick(proj.code)}
+                    style={{ 
+                      cursor: proj.code ? 'pointer' : 'default',
+                      transition: 'transform 0.2s ease-in-out'
+                    }}
+                    onMouseEnter={(e) => {
+                      if (proj.code) {
+                        e.currentTarget.style.transform = 'scale(1.02)';
+                      }
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'scale(1)';
+                    }}
+                    title={proj.code ? "Click to view on GitHub" : ""}
                   />
                   <Card.Body>
                     <Card.Title>
                       <h2 style={{ lineHeight: "1.5", marginTop: "0" }}>
                         {proj.title}
-                        <a
-                          style={{ color: theme.text }}
-                          href={proj.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <i
-                            className={`fas fa-external-link-alt`}
-                            style={{
-                              color: proj.linkcolor,
-                              marginLeft: "10px",
-                            }}
-                          ></i>
-                        </a>
+                        {proj.link && (
+                          <a
+                            style={{ color: theme.text }}
+                            href={proj.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <i
+                              className={`fas fa-external-link-alt`}
+                              style={{
+                                color: proj.linkcolor,
+                                marginLeft: "10px",
+                              }}
+                            ></i>
+                          </a>
+                        )}
                         <a
                           style={{ color: theme.text }}
                           href={proj.code}
@@ -84,9 +107,10 @@ class Projects extends Component {
                       </h2>
                     </Card.Title>
                     <div>
-                      {proj.tags.map((demo2) => {
+                      {proj.tags.map((demo2, tagIndex) => {
                         return (
                           <Badge
+                            key={tagIndex}
                             style={{
                               marginRight: "0.5em",
                               backgroundColor: demo2.color,
@@ -112,7 +136,7 @@ class Projects extends Component {
         <Button
           text={"More Projects"}
           className="project-button"
-          href="https://github.com/waleedgul92  "
+          href="https://github.com/waleedgul92"
           newTab={true}
           theme={theme}
         />
