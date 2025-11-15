@@ -236,7 +236,7 @@ const projectcards = {
   list: [
     {
       title: "Scholar-AI ",
-      img_path: "scholar.png",
+      img_path: "scolar.png",
       description:
         "A RAG-based research assistant that processes ArXiv papers and PDF documents, providing contextual Q&A using LangChain and ChromaDB",
       tags: [
