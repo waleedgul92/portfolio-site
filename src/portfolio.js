@@ -75,14 +75,6 @@ const skills = {
       ],
       softwareSkills: [
         {
-          skillName: "Python",
-          fontAwesomeClassname: "ion-logo-python",
-          style: {
-            backgroundColor: "transparent",
-            color: "#3776AB",
-          },
-        },
-        {
           skillName: "TensorFlow",
           fontAwesomeClassname: "logos-tensorflow",
           style: {
@@ -136,21 +128,6 @@ const skills = {
         "⚡ Implementing time series analysis and forecasting models for business metrics",
       ],
       softwareSkills: [
-        {
-          skillName: "Pandas",
-          fontAwesomeClassname: "simple-icons:pandas",
-          style: {
-            backgroundColor: "transparent",
-            color: "#150458",
-          },
-        },
-        {
-          skillName: "NumPy",
-          fontAwesomeClassname: "logos-numpy",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
         {
           skillName: "Power BI",
           fontAwesomeClassname: "simple-icons:powerbi",
