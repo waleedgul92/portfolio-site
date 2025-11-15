@@ -119,7 +119,7 @@ const skills = {
     },
     {
       title: "Data Analysis & Visualization",
-      fileName: "FullStackImg",
+     "imageUrl": "https://via.placeholder.com/800x400.png?text=Data+Visualization",
       skills: [
         "⚡ Building comprehensive dashboards using Power BI for business intelligence and analytics",
         "⚡ Performing exploratory data analysis and statistical modeling using Pandas, NumPy, and Matplotlib",
