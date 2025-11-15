@@ -1,7 +1,7 @@
 import React, {Component } from "react";
 // import React, {useRef,useEffect,Component } from "react";
 // import lottie from 'lottie-web';
-import data from "./visualizations.gif"
+import data from "./visualizations.jpgg"
 // export default function FullStackImg(){
 //     const container = useRef(null)
 //     useEffect(() => {
