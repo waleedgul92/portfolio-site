@@ -58,7 +58,10 @@ class Projects extends Component {
                     onClick={() => this.handleImageClick(proj.code)}
                     style={{ 
                       cursor: proj.code ? 'pointer' : 'default',
-                      transition: 'transform 0.2s ease-in-out'
+                      transition: 'transform 0.2s ease-in-out',
+                      height: '200px',
+                      objectFit: 'cover',
+                      width: '100%'
                     }}
                     onMouseEnter={(e) => {
                       if (proj.code) {
