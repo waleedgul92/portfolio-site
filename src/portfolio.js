@@ -119,7 +119,7 @@ const skills = {
     },
     {
       title: "Data Analysis & Visualization",
-     "imageUrl": "https://via.placeholder.com/800x400.png?text=Data+Visualization",
+     "imageUrl": "https://onesim-production.s3.ap-southeast-1.amazonaws.com/onesim/media/ge-news-events-articles-for-students/why-choose-data-science-01.jpg",
       skills: [
         "⚡ Building comprehensive dashboards using Power BI for business intelligence and analytics",
         "⚡ Performing exploratory data analysis and statistical modeling using Pandas, NumPy, and Matplotlib",
