@@ -1,6 +1,6 @@
 import React, { Component, useRef, useEffect } from "react";
 import lottie from 'lottie-web';
-import data from "./mlops.jpg"
+import data from "./mlops.png"
 
 // for animated svgs use json file
 // export default function DesignImg(){
