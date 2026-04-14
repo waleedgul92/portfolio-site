@@ -1,5 +1,5 @@
-import React, { Component, useRef, useEffect } from "react";
-import lottie from 'lottie-web';
+import React, { Component } from "react";
+
 import data from "./mlops.png"
 
 // for animated svgs use json file
