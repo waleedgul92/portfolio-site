@@ -237,7 +237,7 @@ const projectcards = {
   list: [
   {
       title: "Apex Synthesis",
-      img_path: "apex.png", // Make sure to add an image to your public folder
+      img_path: "apex.jpg", // Make sure to add an image to your public folder
       description: "AI-driven Decision Intelligence pipeline using LangGraph and multiple LLM agents to evaluate executive candidates against high-stakes crisis scenarios.",
       tags: [
         {
