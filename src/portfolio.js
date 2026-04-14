@@ -261,7 +261,31 @@ const projectcards = {
       linkcolor: "white",
     },
 
-
+  {
+      title: "Crop-Doc AI",
+      img_path: "crop.jpeg", 
+      description: "VGG-16 based CNN architecture for rapid crop disease detection, deployed as a REST API on Google Cloud Platform (GCP).",
+      tags: [
+        {
+          lang: "Python",
+          color: "#004782",
+        },
+        {
+          lang: "TensorFlow",
+          color: "#FF6F00",
+        },
+        {
+          lang: "GCP Cloud",
+          color: "#4285F4",
+        },
+        {
+          lang: "CNN",
+          color: "#00a100",
+        },
+      ],
+      code: "https://github.com/waleedgul92/Crop-Doc", 
+      linkcolor: "white",
+    },
 
     {
       title: "Blog Writing Agent",
