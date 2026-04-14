@@ -257,10 +257,37 @@ const projectcards = {
           color: "#61DAFB",
         },
       ],
-      code: "https://github.com/waleedgul92/executive-synthesis-suit", // Update if the repo name is different
+      code: "https://github.com/waleedgul92/Apex-Synthesis", // Update if the repo name is different
       linkcolor: "white",
     },
 
+
+
+    {
+      title: "Blog Writing Agent",
+      img_path: "blog.png", 
+      description: "Highly concurrent, multi-agent pipeline using LangGraph and FastAPI that performs live web research to autonomously generate structured blog posts.",
+      tags: [
+        {
+          lang: "Python",
+          color: "#004782",
+        },
+        {
+          lang: "FastAPI",
+          color: "#009688",
+        },
+        {
+          lang: "LangGraph",
+          color: "#1C3C3C",
+        },
+        {
+          lang: "Tavily API",
+          color: "#F7931E",
+        },
+      ],
+      code: "https://github.com/waleedgul92/blog-writing-agent", 
+      linkcolor: "white",
+    },
 
 
     
@@ -298,6 +325,11 @@ const projectcards = {
       code: "https://github.com/waleedgul92/Scholar-AI",
       linkcolor: "white",
     },
+
+    
+
+
+    
     {
       title: "CaptionCrafter",
       img_path: "caption.png",
