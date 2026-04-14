@@ -45,6 +45,7 @@ const competitiveSites = {
       siteName: "Leetcode",
       iconifyClassname: "simple-icons:leetcode",
       style: {
+        
         color: "#FFA116",
       },
       profileLink: "https://leetcode.com/u/hwaleed0035/",
@@ -234,6 +235,38 @@ const projectsHeader = {
 //project cards
 const projectcards = {
   list: [
+  {
+      title: "Apex Synthesis",
+      img_path: "apex.png", // Make sure to add an image to your public folder
+      description: "AI-driven Decision Intelligence pipeline using LangGraph and multiple LLM agents to evaluate executive candidates against high-stakes crisis scenarios.",
+      tags: [
+        {
+          lang: "Python",
+          color: "#004782",
+        },
+        {
+          lang: "LangGraph",
+          color: "#1C3C3C",
+        },
+        {
+          lang: "n8n",
+          color: "#EA4335",
+        },
+        {
+          lang: "React",
+          color: "#61DAFB",
+        },
+      ],
+      code: "https://github.com/waleedgul92/executive-synthesis-suit", // Update if the repo name is different
+      linkcolor: "white",
+    },
+
+
+
+    
+
+
+    
     {
       title: "Scholar-AI ",
       img_path: "scolar.png",
