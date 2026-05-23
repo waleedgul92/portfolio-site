@@ -1,12 +1,11 @@
 const settings = {
-  isSplash: true, // Change this to false if you don't want Splash screen.
+  isSplash: true
 };
 
-//SEO Related settings
 const seo = {
   title: "Waleed Gul | Portfolio",
   description:
-    "A Data Science practitioner who thrives to leverage startups with AI based solutions ",
+    "A Data Scientist and ML Engineer specializing in Agentic LLM architectures, multi-agent workflows, and leveraging startups with autonomous AI solutions.",
   og: {
     title: "Waleed Gul",
     type: "website",
@@ -14,7 +13,6 @@ const seo = {
   },
 };
 
-//Home Page
 const greeting = {
   title: "Hello!",
   sub: "Waleed Gul",
@@ -22,7 +20,7 @@ const greeting = {
   resumeLink: "",
 };
 
-// home logos
+
 const competitiveSites = {
   competitiveSites: [
     {
@@ -45,7 +43,6 @@ const competitiveSites = {
       siteName: "Leetcode",
       iconifyClassname: "simple-icons:leetcode",
       style: {
-        
         color: "#FFA116",
       },
       profileLink: "https://leetcode.com/u/hwaleed0035/",
@@ -61,11 +58,10 @@ const competitiveSites = {
   ],
 };
 
-//what i do?
 const skills = {
   data: [
     {
-      title: "Data Science & AI",
+      title: "Data Science, AI & LLM",
       fileName: "DataScienceImg",
       skills: [
         "⚡ Developing RAG-based applications using LangChain and vector databases for intelligent document processing",
@@ -82,7 +78,6 @@ const skills = {
             backgroundColor: "transparent",
           },
         },
-
         {
           skillName: "LangChain",
           fontAwesomeClassname: "simple-icons:langchain",
@@ -94,10 +89,6 @@ const skills = {
         {
           skillName: "OpenCV",
           fontAwesomeClassname: "simple-icons:opencv",
-          // style: {
-          //   backgroundColor: "transparent",
-          //   color: "#5C3EE8",
-          // },
         },
         {
           skillName: "scikit-learn",
@@ -107,20 +98,23 @@ const skills = {
             color: "#F7931E",
           },
         },
-
-                {
+        {
           skillName: "PyTorch",
           fontAwesomeClassname: "logos-pytorch",
-          // style: {
-          //   backgroundColor: "transparent",
-          //   color: "#EE4C2C",
-          // },
+        },
+        {
+          skillName: "Ollama",
+          fontAwesomeClassname: "simple-icons:ollama",
+          style: {
+            backgroundColor: "transparent",
+            color: "#000000",
+          },
         },
       ],
     },
     {
       title: "Data Analysis & Visualization",
-     fileName: "FullStackImg",
+      fileName: "FullStackImg",
       skills: [
         "⚡ Building comprehensive dashboards using Power BI for business intelligence and analytics",
         "⚡ Performing exploratory data analysis and statistical modeling using Pandas, NumPy, and Matplotlib",
@@ -162,7 +156,7 @@ const skills = {
     {
       title: "MLOps & Deployment",
       fileName: "DesignImg",
-     skills: [
+      skills: [
         "⚡ Deploying ML models using FastAPI and creating RESTful APIs for model serving",
         "⚡ Building web applications with Streamlit for interactive data science demos",
         "⚡ Managing cloud deployments on AWS (EC2, ECS, ECR, S3, Lambda) for scalable solutions",
@@ -201,7 +195,6 @@ const skills = {
             backgroundColor: "transparent",
             color: "#2496ED",
           },
-        
         },
         { 
           skillName: "Kubernetes", 
@@ -210,9 +203,8 @@ const skills = {
             backgroundColor: "transparent", 
             color: "#326CE5" 
           }
-        }
-        ,
-{
+        },
+        {
           skillName: "ChromaDB",
           fontAwesomeClassname: "logos:chroma",
           style: {
@@ -224,7 +216,6 @@ const skills = {
     },
   ],
 };
-
 // Projects Page
 const projectsHeader = {
   title: "Projects",
@@ -677,9 +668,9 @@ const resumeleft = {
         subtitle: "Global Shala",
         date: "June 2022 - July 2022",
         content: [
-          "Global Shala decided to discontinue some of theirs campaigns.",
-          "We visualized the data and recommended to dicontinue 2 ineffective campaign.",
-          "We strengthened campaign by cutting 18 percent cost on campaign that were less effective and focus on effective ones",
+          "Analyzed campaign performance data to identify underperforming marketing streams and support strategic restructuring decisions.",
+          "Engineered data visualizations that successfully identified and justified the discontinuation of two major ineffective campaigns.",
+          "Optimized resource allocation by reducing expenditure on low-yield campaigns by 18%, shifting organizational focus toward high-impact initiatives.",
         ],
       },
     ],
@@ -692,24 +683,15 @@ const resumeright = {
       title: ["Education"],
       data: [
         {
-          title: "Masters in Artificial Intelligence",
-          subtitle:
-            "London Metropolitan University, London",
+          title: "Master of Science in Artificial Intelligence",
+          subtitle: "London Metropolitan University, London",
           date: "2025-Present",
           content: [],
         },
         {
           title: "Bachelor of Computer Science",
-          subtitle:
-            "National University of Computer and Emerging Science, Karachi",
+          subtitle: "National University of Computer and Emerging Science, Karachi",
           date: "2020 - 2024",
-          content: [],
-        },
-        {
-          title: "Higher Secondary Certificate [HSC]",
-          subtitle:
-            "Khawaja Fareed Government College. College, Rahim Yar Khan",
-          date: "2016 - 2020",
           content: [],
         },
       ],
@@ -720,9 +702,8 @@ const resumeright = {
         {
           title: "Data Science & AI Development",
           content: [
-            "Developed AI models for prediction and deployed them on AWS",
-            "Built RAG applications and document processing systems",
-            "Created computer vision and NLP solutions for various clients",
+            "Architected and deployed production-grade machine learning models with automated inference pipelines on cloud infrastructure.",
+            "Designed advanced RAG applications, autonomous agent workflows, and intelligent document extraction systems.",
           ],
         },
       ],
