@@ -699,14 +699,24 @@ const awardsAndAchievements = {
   title: "AWARDS & ACCOMPLISHMENTS",
   list: [
     {
+      id: 0,
       title: "Participation Agentic AI Hackathon",
       issuer: "BMW Group",
       date: "Mar 2026",
+      image_path: "agentic_ai_hackatho.png",
+      description:
+        "Explored advanced autonomous agent workflows and LLM orchestration during the BMW Group innovation challenge.",
+      category: "HACKATHON",
     },
     {
+      id: 1,
       title: "Winner Data Science",
       issuer: "DevDay FAST",
       date: "Apr 2024",
+      image_path: "devday_winner.webp",
+      description:
+        "Secured 1st place in the flagship Data Science competition, solving complex predictive modeling challenges under strict time constraints.",
+      category: "COMPETITION",
     },
   ],
 };
@@ -715,97 +725,49 @@ const professionalCertifications = {
   title: "PROFESSIONAL CERTIFICATIONS",
   list: [
     {
-      title: "Introduction to Data Science-Specialization",
-      issuer: "IBM",
-      date: "",
-    },
-    {
-      title: "Data Science-Specialization",
-      issuer: "IBM",
-      date: "",
-    },
-    {
-      title: "Data Analytics-Specialization",
-      issuer: "Google",
-      date: "",
-    },
-    {
-      title: "Applied Data Science-Specialization",
-      issuer: "IBM",
-      date: "",
-    },
-    {
-      title: "Machine Learning-Specialization",
-      issuer: "IBM",
-      date: "",
-    },
-    {
+      id: 2,
       title: "Advanced Data Analytics-Specialization",
       issuer: "Google",
-      date: "",
+      date: "Dec 2023",
+      image_path: "advanced_data_analytics.png",
+      description:
+        "Mastered end-to-end data pipelines, statistical analysis, and predictive modeling using Python and SQL.",
+      category: "GOOGLE",
+    },
+    {
+      id: 3,
+      title: "Machine Learning-Specialization",
+      issuer: "IBM",
+      date: "Nov 2023",
+      image_path: "machine_learning_spec.png",
+      description:
+        "Focused on supervised and unsupervised learning algorithms, model evaluation, and deployment strategies.",
+      category: "IBM",
+    },
+    {
+      id: 4,
+      title: "Applied Data Science-Specialization",
+      issuer: "IBM",
+      date: "Oct 2023",
+      image_path: "applied_data_science.png",
+      description:
+        "Applied data science methodologies to real-world datasets, emphasizing data visualization and storytelling.",
+      category: "IBM",
+    },
+    {
+      id: 5,
+      title: "Data Analytics-Specialization",
+      issuer: "Google",
+      date: "Sep 2023",
+      image_path: "data_analytics_spec.png",
+      description:
+        "Foundational training in data cleaning, analysis, and visualization using R and Tableau.",
+      category: "GOOGLE",
     },
   ],
 };
 
 export { awardsAndAchievements, professionalCertifications };
-const certifications = {
-  certifications: [
-    {
-      title: "Introduction to Data Science-Specialization",
-      subtitle: "IBM",
-      logo_path: "ibm_logo.png",
-      certificate_link:
-        "https://coursera.org/share/ad89f0259a322a405d740f7cf99139b5",
-      alt_name: "IBM",
-      color_code: "#000000",
-    },
-    {
-      title: "Data Science-Specialization",
-      subtitle: "IBM",
-      logo_path: "ibm_logo.png",
-      certificate_link:
-        "https://coursera.org/share/a54ab35b893b98437d0a27800ff2ab2d",
-      alt_name: "IBM",
-      color_code: "#000000",
-    },
-    {
-      title: "Data Analytics-Specialization",
-      subtitle: "Google",
-      logo_path: "google_logo.png",
-      certificate_link:
-        "https://coursera.org/share/fd14aa662860318468680779424d03fc",
-      alt_name: "Google",
-      color_code: "#000000",
-    },
-    {
-      title: "Applied Data Science-Specialization",
-      subtitle: "IBM",
-      logo_path: "ibm_logo.png",
-      certificate_link:
-        "https://coursera.org/share/3b9f1dd069ef35fb52fa80508c00340f",
-      alt_name: "IBM",
-      color_code: "#000000",
-    },
-    {
-      title: "Machine Learning-Specialization",
-      subtitle: "IBM",
-      logo_path: "ibm_logo.png",
-      certificate_link:
-        "https://coursera.org/share/31c5e8a2a5e3e4943c1a0a53b86a9a3c",
-      alt_name: "IBM",
-      color_code: "#000000",
-    },
-    {
-      title: "Advanced Data Analytics-Specialization",
-      subtitle: "Google",
-      logo_path: "google_logo.png",
-      certificate_link:
-        "https://coursera.org/share/d201277d1be8e322eff1a3e7b1ad6111",
-      alt_name: "Google",
-      color_code: "#000000",
-    },
-  ],
-};
 
 const contactPageData = {
   contactSection: {
@@ -850,7 +812,6 @@ export {
   projectsHeader,
   contactPageData,
   projectcards,
-  certifications,
   resumeleft,
   resumeright,
 };
