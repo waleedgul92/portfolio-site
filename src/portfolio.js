@@ -694,6 +694,60 @@ const resumeright = {
     },
   ],
 };
+
+const awardsAndAchievements = {
+  title: "AWARDS & ACCOMPLISHMENTS",
+  list: [
+    {
+      title: "Participation Agentic AI Hackathon",
+      issuer: "BMW Group",
+      date: "Mar 2026",
+    },
+    {
+      title: "Winner Data Science",
+      issuer: "DevDay FAST",
+      date: "Apr 2024",
+    },
+  ],
+};
+
+const professionalCertifications = {
+  title: "PROFESSIONAL CERTIFICATIONS",
+  list: [
+    {
+      title: "Introduction to Data Science-Specialization",
+      issuer: "IBM",
+      date: "",
+    },
+    {
+      title: "Data Science-Specialization",
+      issuer: "IBM",
+      date: "",
+    },
+    {
+      title: "Data Analytics-Specialization",
+      issuer: "Google",
+      date: "",
+    },
+    {
+      title: "Applied Data Science-Specialization",
+      issuer: "IBM",
+      date: "",
+    },
+    {
+      title: "Machine Learning-Specialization",
+      issuer: "IBM",
+      date: "",
+    },
+    {
+      title: "Advanced Data Analytics-Specialization",
+      issuer: "Google",
+      date: "",
+    },
+  ],
+};
+
+export { awardsAndAchievements, professionalCertifications };
 const certifications = {
   certifications: [
     {
