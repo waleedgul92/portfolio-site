@@ -1,150 +1,164 @@
 import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import Button from "../../components/button/Button";
-import Badge from "react-bootstrap/Badge";
 import TopButton from "../../components/topButton/TopButton";
+import { projectcards, projectsHeader } from "../../portfolio";
 import { Fade } from "react-reveal";
-import { projectsHeader } from "../../portfolio.js";
-import { projectcards } from "../../portfolio";
-import { CardColumns, Card } from "react-bootstrap";
 import "./Projects.css";
-import ProjectsImg from "./ProjectsImg";
 
 class Projects extends Component {
-  // Function to handle image click
-  handleImageClick = (githubUrl) => {
-    if (githubUrl) {
-      window.open(githubUrl, "_blank", "noopener,noreferrer");
-    }
-  };
-
   render() {
     const theme = this.props.theme;
     return (
       <div className="projects-main">
         <Header theme={theme} />
-        <div className="basic-projects">
-          <Fade bottom duration={2000} distance="40px">
-            <div className="projects-heading-div">
-              <div className="projects-heading-img-div">
-                <ProjectsImg theme={theme} />
-              </div>
-              <div className="projects-heading-text-div">
-                <h1
-                  className="projects-heading-text"
-                  style={{ color: theme.orange }}
-                >
-                  {projectsHeader.title}
-                </h1>
-                <p
-                  className="projects-header-detail-text subTitle"
-                  style={{ color: theme.text }}
-                >
-                  {projectsHeader["description"]}
-                </p>
-              </div>
+        <div className="basic-projects" style={{ padding: "20px 5%" }}>
+          <Fade bottom duration={1000} distance="40px">
+            <div className="projects-header-div">
+              <h1
+                className="projects-header"
+                style={{
+                  color: "#F2C811",
+                  fontSize: "44px",
+                  textAlign: "center",
+                  marginTop: "30px",
+                }}
+              >
+                {projectsHeader.title}
+              </h1>
+              <h4
+                className="projects-subtitle"
+                style={{
+                  color: theme.text,
+                  textAlign: "center",
+                  opacity: 0.7,
+                  marginBottom: "30px",
+                  fontSize: "16px",
+                }}
+              >
+                {projectsHeader.description}
+              </h4>
+            </div>
+            <div
+              className="repo-cards-div-main"
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+                gap: "20px",
+              }}
+            >
+              {projectcards.list.map((repo, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="repo-card-div"
+                    style={{
+                      backgroundColor: "rgba(255, 255, 255, 0.02)",
+                      borderRadius: "6px",
+                      overflow: "hidden",
+                      display: "flex",
+                      flexDirection: "column",
+                      border: "1px solid rgba(255, 255, 255, 0.04)",
+                    }}
+                  >
+                    {repo.img_path && (
+                      <div
+                        style={{
+                          width: "100%",
+                          height: "150px",
+                          overflow: "hidden",
+                          borderBottom: "1px solid rgba(255, 255, 255, 0.04)",
+                        }}
+                      >
+                        <img
+                          src={require(`../../assets/projects/${repo.img_path}`)}
+                          alt={repo.title}
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                          }}
+                        />
+                      </div>
+                    )}
+                    <div
+                      style={{
+                        padding: "16px",
+                        flexGrow: 1,
+                        display: "flex",
+                        flexDirection: "column",
+                      }}
+                    >
+                      <p
+                        style={{
+                          color: theme.text,
+                          fontSize: "18px",
+                          fontWeight: "bold",
+                          margin: "0 0 8px 0",
+                        }}
+                      >
+                        {repo.title}
+                      </p>
+                      <p
+                        style={{
+                          color: theme.text,
+                          opacity: 0.7,
+                          fontSize: "13px",
+                          lineHeight: "1.5",
+                          margin: "0 0 16px 0",
+                          flexGrow: 1,
+                        }}
+                      >
+                        {repo.description}
+                      </p>
+                      <div
+                        style={{
+                          display: "flex",
+                          flexWrap: "wrap",
+                          gap: "6px",
+                          marginBottom: "16px",
+                        }}
+                      >
+                        {repo.tags.map((tag, i) => (
+                          <span
+                            key={i}
+                            style={{
+                              backgroundColor: tag.color,
+                              color: "#ffffff",
+                              padding: "3px 8px",
+                              borderRadius: "4px",
+                              fontSize: "11px",
+                              fontWeight: "600",
+                            }}
+                          >
+                            {tag.lang}
+                          </span>
+                        ))}
+                      </div>
+                      <div>
+                        <a
+                          href={repo.code}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            color: "#F2C811",
+                            textDecoration: "none",
+                            fontWeight: "bold",
+                            fontSize: "13px",
+                          }}
+                        >
+                          View Code →
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </Fade>
         </div>
-        <div className="repo-cards-div-main">
-          <CardColumns>
-            {projectcards.list.map((proj, index) => {
-              return (
-                <Card className="h-100" key={index}>
-                  <Card.Img
-                    variant="top"
-                    src={require(`../../assets/projects/${proj.img_path}`)}
-                    onClick={() => this.handleImageClick(proj.code)}
-                    style={{ 
-                      cursor: proj.code ? 'pointer' : 'default',
-                      transition: 'transform 0.2s ease-in-out',
-                      height: '200px',
-                      objectFit: 'cover',
-                      width: '100%'
-                    }}
-                    onMouseEnter={(e) => {
-                      if (proj.code) {
-                        e.currentTarget.style.transform = 'scale(1.02)';
-                      }
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.transform = 'scale(1)';
-                    }}
-                    title={proj.code ? "Click to view on GitHub" : ""}
-                  />
-                  <Card.Body>
-                    <Card.Title>
-                      <h2 style={{ lineHeight: "1.5", marginTop: "0" }}>
-                        {proj.title}
-                        {proj.link && (
-                          <a
-                            style={{ color: theme.text }}
-                            href={proj.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <i
-                              className={`fas fa-external-link-alt`}
-                              style={{
-                                color: proj.linkcolor,
-                                marginLeft: "10px",
-                              }}
-                            ></i>
-                          </a>
-                        )}
-                        <a
-                          style={{ color: theme.text }}
-                          href={proj.code}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <i
-                            className={`fab fa-github`}
-                            style={{
-                              color: proj.linkcolor,
-                              paddingLeft: "10px",
-                            }}
-                          ></i>
-                        </a>
-                      </h2>
-                    </Card.Title>
-                    <div>
-                      {proj.tags.map((demo2, tagIndex) => {
-                        return (
-                          <Badge
-                            key={tagIndex}
-                            style={{
-                              marginRight: "0.5em",
-                              backgroundColor: demo2.color,
-                            }}
-                          >
-                            {" "}
-                            {demo2.lang}
-                          </Badge>
-                        );
-                      })}
-                    </div>
-                    <div
-                      className="text-center"
-                      style={{ marginTop: "20px" }}
-                    ></div>
-                    <Card.Text>{proj.description}</Card.Text>
-                  </Card.Body>
-                </Card>
-              );
-            })}
-          </CardColumns>
-        </div>
-        <Button
-          text={"More Projects"}
-          className="project-button"
-          href="https://github.com/waleedgul92"
-          newTab={true}
-          theme={theme}
-        />
-        <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
-        <TopButton theme={this.props.theme} />
+        <Footer theme={theme} />
+        <TopButton theme={theme} />
       </div>
     );
   }

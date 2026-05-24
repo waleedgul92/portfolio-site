@@ -3,6 +3,7 @@
   margin: 0px auto;
   margin-top: 4rem;
 }
+
 .greet-main {
   width: 90%;
   padding: 20px 10px;
@@ -18,45 +19,118 @@
 
 .greeting-main {
   display: flex;
+  align-items: center;
 }
 
 .greeting-main > * {
   flex: 1;
   margin-bottom: 30px;
 }
-.button-greeting-div {
-  display: flex;
-  margin-top: 10px;
-  text-align: center;
+
+.greeting-top-label {
+  font-family: "Google Sans Bold", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 10px;
 }
 
-.greeting-text {
+.greeting-name-huge {
   margin-top: 0px;
-  font-size: 100px;
-  margin-bottom: 0px;
-  line-height: 1.1;
-  font-family: "Google Sans Regular";
+  font-size: 85px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  line-height: 1.05;
+  font-family: "Google Sans Bold", sans-serif;
+  color: #ffffff;
 }
-.greeting-sub {
-  margin-top: 0px;
-  font-size: 50px;
-  margin-bottom: 50px;
-  line-height: 1.1;
-  font-family: "Google Sans Bold";
+
+.greeting-accent-line {
+  height: 5px;
+  width: 440px;
+  max-width: 100%;
+  margin-bottom: 35px;
+  border-radius: 2px;
 }
+
 .greeting-typewriter {
   margin-top: 0px;
-  font-size: 60px;
-  margin-bottom: 60px;
-  line-height: 0px;
-  font-family: "Google Sans Regular";
+  font-size: 24px;
+  margin-bottom: 30px;
+  line-height: 1.4;
+  font-family: "Google Sans Medium", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .greeting-text-span {
   font-size: 18px;
-  margin-top: 65px;
+  margin-top: 40px;
   margin-right: 40px;
-  font-family: "Google Sans Medium";
+  font-family: "Google Sans Medium", sans-serif;
+}
+
+.introduction-text {
+  font-size: 18px;
+  line-height: 1.75;
+  margin-bottom: 35px;
+  font-family: "Google Sans Regular", sans-serif;
+  text-align: left;
+}
+
+.bio-paragraph {
+  margin-bottom: 16px;
+  opacity: 0.85;
+}
+
+.introduction-text strong {
+  font-family: "Google Sans Bold", sans-serif;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.button-greeting-div {
+  display: flex;
+  margin-top: 35px;
+  gap: 20px;
+}
+
+.portfolio-btn-filled a,
+.portfolio-btn-outlined a {
+  padding: 14px 28px !important;
+  font-size: 15px !important;
+  font-family: "Google Sans Bold", sans-serif !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  border-radius: 4px !important;
+  transition: all 0.2s ease-in-out !important;
+  display: inline-block !important;
+  text-align: center !important;
+}
+
+.portfolio-btn-filled a {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 2px solid #ffffff !important;
+}
+
+.portfolio-btn-filled a:hover {
+  background-color: #e5e5e5 !important;
+  border-color: #e5e5e5 !important;
+  transform: translateY(-2px);
+}
+
+.portfolio-btn-outlined a {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.portfolio-btn-outlined a:hover {
+  border-color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  transform: translateY(-2px);
 }
 
 .greeting-image-div > * {
@@ -64,177 +138,44 @@
   height: auto;
 }
 
-/* Media Query */
 @media (max-width: 1380px) {
-  .greeting-text {
-    font-size: 50px;
+  .greeting-name-huge {
+    font-size: 65px;
   }
-  .greeting-text-span {
-    font-size: 20px;
+  .introduction-text {
+    font-size: 17px;
   }
 }
+
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
-  }
-  .greeting-text {
-    font-size: 60px;
-    margin-top: 50px;
-  }
-  .greeting-sub {
-    margin-top: 10px;
-    font-size: 30px;
-    margin-bottom: 0px;
-    line-height: 1.1;
-    font-family: "Google Sans Bold";
-  }
-  .greeting-typewriter {
-    margin-top: 30px;
-    font-size: 30px;
-    margin-bottom: 100px;
-  }
-  .greeting-text-span {
-    font-size: 18px;
-    margin-right: 0px;
-  }
-
   .greeting-main {
     display: block;
   }
-
-  .portfolio-repo-btn-div {
-    width: 100%;
-    margin-top: 200px;
-    display: flex;
-    justify-content: center;
-  }
-  .button-greeting-div {
-    display: flex;
-    margin-top: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .button-greeting-div {
-    justify-content: space-around;
-  }
-  .greeting-text {
+  .greeting-name-huge {
     font-size: 50px;
-    margin-top: -50px;
-  }
-  .greeting-sub {
-    margin-top: 10px;
-    font-size: 20px;
-    margin-bottom: 0px;
-    line-height: 1.1;
-    font-family: "Google Sans Bold";
-  }
-
-  .greeting-typewriter {
     margin-top: 20px;
-    font-size: 25px;
-    margin-bottom: 40px;
   }
-  .greeting-text-span {
-    font-size: 15px;
-    margin-right: 0px;
-    line-height: normal;
-    margin-bottom: 0px;
-  }
-  .greeting-main {
-    display: block;
-  }
-
   .button-greeting-div {
-    display: flex;
-    margin-top: -10px;
-    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .portfolio-btn-filled a,
+  .portfolio-btn-outlined a {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .introduction-text {
+    font-size: 16px;
+    line-height: 1.65;
   }
 }
 
-.entities {
-  line-height: 2;
-}
-
-[data-entity] {
-  padding: 0.25em 0.35em;
-  margin: 0px 0.25em;
-  line-height: 1;
-  display: inline-block;
-  border-radius: 0.25em;
-  border: 1px solid;
-}
-
-[data-entity]::after {
-  box-sizing: border-box;
-  content: attr(data-entity);
-  font-size: 0.6em;
-  line-height: 1;
-  padding: 0.35em;
-  border-radius: 0.35em;
-  text-transform: uppercase;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0px 0px 0.1rem 0.5rem;
-}
-
-[data-entity][data-entity="noun"] {
-  background: rgba(166, 226, 45, 0.2);
-  border-color: rgb(166, 226, 45);
-  color: rgb(255, 255, 255);
-}
-[data-entity][data-entity="noun"]::after {
-  background: rgb(166, 226, 45);
-  color: rgb(0, 0, 0);
-}
-
-[data-entity][data-entity="person"] {
-  background: rgba(45, 226, 217, 0);
-  border-color: rgb(45, 226, 141);
-  color: rgb(255, 255, 255);
-}
-
-[data-entity][data-entity="person"]::after {
-  background: rgb(45, 226, 141);
-  color: rgb(0, 0, 0);
-}
-
-[data-entity][data-entity="skill"] {
-  background: rgb(187, 47, 117, 0.2);
-  border-color: rgb(187, 47, 117);
-  color: rgb(255, 255, 255);
-}
-
-[data-entity][data-entity="skill"]::after {
-  background: rgb(187, 47, 117);
-}
-
-[data-entity][data-entity="freelance"] {
-  background: rgb(187, 161, 47, 0.2);
-  border-color: rgb(187, 161, 47);
-  color: rgb(255, 255, 255);
-}
-
-[data-entity][data-entity="freelance"]::after {
-  background: rgb(187, 161, 47);
-  color: rgb(0, 0, 0);
-}
-
-[data-entity][data-entity="verb"] {
-  background: rgba(47, 187, 171, 0.2);
-  border-color: rgb(47, 187, 171);
-  color: rgb(255, 255, 255);
-}
-
-[data-entity][data-entity="verb"]::after {
-  background: rgb(21, 124, 112);
-}
-
-[data-entity][data-entity="tools"] {
-  background: rgba(255, 165, 0, 0.2);
-  border-color: rgb(255, 165, 0);
-  color: rgb(255, 255, 255);
-}
-[data-entity][data-entity="tools"]::after {
-  background: rgb(255, 140, 0);
-  color: rgb(0, 0, 0);
+@media (max-width: 480px) {
+  .greeting-name-huge {
+    font-size: 40px;
+  }
+  .greeting-top-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
 }

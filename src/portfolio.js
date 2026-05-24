@@ -1,5 +1,5 @@
 const settings = {
-  isSplash: true
+  isSplash: true,
 };
 
 const seo = {
@@ -19,7 +19,6 @@ const greeting = {
   logo_name: "Waleed Gul",
   resumeLink: "",
 };
-
 
 const competitiveSites = {
   competitiveSites: [
@@ -133,7 +132,7 @@ const skills = {
         },
         {
           skillName: "Matplotlib",
-          fontAwesomeClassname: "logos:matplotlib"
+          fontAwesomeClassname: "logos:matplotlib",
         },
         {
           skillName: "Seaborn",
@@ -162,7 +161,7 @@ const skills = {
         "⚡ Managing cloud deployments on AWS (EC2, ECS, ECR, S3, Lambda) for scalable solutions",
         "⚡ Implementing containerized ML applications using Docker and Kubernetes (K8s, pods, deployments)",
         "⚡ Creating end-to-end ML pipelines with CI/CD automation from data processing to model deployment",
-      ],  
+      ],
       softwareSkills: [
         {
           skillName: "FastAPI",
@@ -196,13 +195,13 @@ const skills = {
             color: "#2496ED",
           },
         },
-        { 
-          skillName: "Kubernetes", 
-          fontAwesomeClassname: "simple-icons:kubernetes", 
-          style: { 
-            backgroundColor: "transparent", 
-            color: "#326CE5" 
-          }
+        {
+          skillName: "Kubernetes",
+          fontAwesomeClassname: "simple-icons:kubernetes",
+          style: {
+            backgroundColor: "transparent",
+            color: "#326CE5",
+          },
         },
         {
           skillName: "ChromaDB",
@@ -216,20 +215,20 @@ const skills = {
     },
   ],
 };
-// Projects Page
+
 const projectsHeader = {
   title: "Projects",
   description:
     "My projects span across AI, data science, and machine learning domains. From RAG applications to computer vision and NLP solutions, I focus on building practical, scalable systems that solve real-world problems.",
 };
 
-//project cards
 const projectcards = {
   list: [
-  {
+    {
       title: "Apex Synthesis",
-      img_path: "apex.jpg", // Make sure to add an image to your public folder
-      description: "AI-driven Decision Intelligence pipeline using LangGraph and multiple LLM agents to evaluate executive candidates against high-stakes crisis scenarios.",
+      img_path: "apex.jpg",
+      description:
+        "AI-driven Decision Intelligence pipeline using LangGraph and multiple LLM agents to evaluate executive candidates against high-stakes crisis scenarios.",
       tags: [
         {
           lang: "Python",
@@ -248,14 +247,15 @@ const projectcards = {
           color: "#61DAFB",
         },
       ],
-      code: "https://github.com/waleedgul92/Apex-Synthesis", // Update if the repo name is different
+      code: "https://github.com/waleedgul92/Apex-Synthesis",
       linkcolor: "white",
     },
 
-  {
+    {
       title: "Crop-Doc AI",
-      img_path: "crop.jpeg", 
-      description: "VGG-16 based CNN architecture for rapid crop disease detection, deployed as a REST API on Google Cloud Platform (GCP).",
+      img_path: "crop.jpeg",
+      description:
+        "VGG-16 based CNN architecture for rapid crop disease detection, deployed as a REST API on Google Cloud Platform (GCP).",
       tags: [
         {
           lang: "Python",
@@ -274,14 +274,15 @@ const projectcards = {
           color: "#00a100",
         },
       ],
-      code: "https://github.com/waleedgul92/Crop-Doc", 
+      code: "https://github.com/waleedgul92/Crop-Doc",
       linkcolor: "white",
     },
 
     {
       title: "Blog Writing Agent",
-      img_path: "blog.png", 
-      description: "Highly concurrent, multi-agent pipeline using LangGraph and FastAPI that performs live web research to autonomously generate structured blog posts.",
+      img_path: "blog.png",
+      description:
+        "Highly concurrent, multi-agent pipeline using LangGraph and FastAPI that performs live web research to autonomously generate structured blog posts.",
       tags: [
         {
           lang: "Python",
@@ -300,15 +301,10 @@ const projectcards = {
           color: "#F7931E",
         },
       ],
-      code: "https://github.com/waleedgul92/blog-writing-agent", 
+      code: "https://github.com/waleedgul92/blog-writing-agent",
       linkcolor: "white",
     },
 
-
-    
-
-
-    
     {
       title: "Scholar-AI ",
       img_path: "scolar.png",
@@ -336,15 +332,10 @@ const projectcards = {
           color: "#4285F4",
         },
       ],
-      // link: "",
       code: "https://github.com/waleedgul92/Scholar-AI",
       linkcolor: "white",
     },
 
-    
-
-
-    
     {
       title: "CaptionCrafter",
       img_path: "caption.png",
@@ -372,14 +363,14 @@ const projectcards = {
           color: "#c47206",
         },
       ],
-      // link: "",
       code: "https://github.com/waleedgul92/CaptionCrafter",
       linkcolor: "white",
     },
     {
       title: "DocWeaver-AI",
       img_path: "DOCWEAVE.png",
-      description: "Advanced multi-LLM RAG chatbot for querying documents and URLs with sophisticated reranking pipeline",
+      description:
+        "Advanced multi-LLM RAG chatbot for querying documents and URLs with sophisticated reranking pipeline",
       tags: [
         {
           lang: "Python",
@@ -402,14 +393,14 @@ const projectcards = {
           color: "#000000",
         },
       ],
-      // link: "",
       code: "https://github.com/waleedgul92/DocWeaver-AI",
       linkcolor: "white",
     },
     {
       title: "Receipt2Sheet",
       img_path: "receipt.png",
-      description: "AI-powered receipt data extractor that processes receipt images and converts them to CSV/XLS format",
+      description:
+        "AI-powered receipt data extractor that processes receipt images and converts them to CSV/XLS format",
       tags: [
         {
           lang: "Python",
@@ -432,7 +423,6 @@ const projectcards = {
           color: "#820032",
         },
       ],
-      // link: "",
       code: "https://github.com/waleedgul92/Receipt2Sheet-2.0",
       linkcolor: "white",
     },
@@ -463,7 +453,6 @@ const projectcards = {
           color: "#820032",
         },
       ],
-      // link: "",
       code: "https://github.com/waleedgul92/ColdComposeAI",
       linkcolor: "white",
     },
@@ -490,7 +479,6 @@ const projectcards = {
           color: "#c47206",
         },
       ],
-      // link: "",
       code: "https://github.com/waleedgul92/PriceWise-Walmart",
       linkcolor: "white",
     },
@@ -513,14 +501,14 @@ const projectcards = {
           color: "#00a100",
         },
       ],
-      // link: "",
       code: "https://github.com/waleedgul92/DocWeaver-AI",
       linkcolor: "white",
     },
     {
       title: "Card Fraud Detection",
       img_path: "credit.png",
-      description: "Imbalanced classification system using SMOTE and multiple ML algorithms to detect fraudulent transactions",
+      description:
+        "Imbalanced classification system using SMOTE and multiple ML algorithms to detect fraudulent transactions",
       tags: [
         {
           lang: "Python",
@@ -539,14 +527,14 @@ const projectcards = {
           color: "#ff4b4b",
         },
       ],
-      // link: "",
       code: "https://github.com/waleedgul92/CardSafe-Europe",
       linkcolor: "white",
     },
     {
       title: "Traffic Sign Recognition",
       img_path: "traffic.png",
-      description: "Dual approach system using Vision Transformers with DINO self-supervision and CNN for German traffic sign classification",
+      description:
+        "Dual approach system using Vision Transformers with DINO self-supervision and CNN for German traffic sign classification",
       tags: [
         {
           lang: "Python",
@@ -565,14 +553,15 @@ const projectcards = {
           color: "#820032",
         },
       ],
-      // link: "",
-      code: "https://github.com/waleedgul92/Traffic-Sign-Classifcation-using-CNN-and-Vision-Transformer",
+      code:
+        "https://github.com/waleedgul92/Traffic-Sign-Classifcation-using-CNN-and-Vision-Transformer",
       linkcolor: "white",
     },
     {
       title: "Fine-Tuned LLM for OCR",
       img_path: "ocr.png",
-      description: "Fine-tuned TrOCR model for captcha text recognition with custom dataset training and inference pipeline",
+      description:
+        "Fine-tuned TrOCR model for captcha text recognition with custom dataset training and inference pipeline",
       tags: [
         {
           lang: "Python",
@@ -595,8 +584,8 @@ const projectcards = {
           color: "#ff4b4b",
         },
       ],
-      // link: "",
-      code: "https://github.com/waleedgul92/OCR-using-Fine-Tuning-LLM-on-custom-datatset",
+      code:
+        "https://github.com/waleedgul92/OCR-using-Fine-Tuning-LLM-on-custom-datatset",
       linkcolor: "white",
     },
     {
@@ -617,23 +606,21 @@ const projectcards = {
           lang: "IDS",
           color: "#ff4b4b",
         },
-        {
-          lang: "Network Analysis",
-          color: "#3c0095",
-        },
+
         {
           lang: "IoT",
           color: "#00a100",
         },
       ],
-  
+
       code: "https://github.com/waleedgul92/Layer7Defend",
       linkcolor: "white",
     },
     {
       title: "StyleGAN Monet",
       img_path: "style.png",
-      description: "CycleGAN implementation from scratch to convert regular paintings into Monet art-style paintings",
+      description:
+        "CycleGAN implementation from scratch to convert regular paintings into Monet art-style paintings",
       tags: [
         {
           lang: "Python",
@@ -652,7 +639,6 @@ const projectcards = {
           color: "#820032",
         },
       ],
-      // link: "",
       code: "https://github.com/waleedgul92/StyleGAN-Monet",
       linkcolor: "white",
     },
@@ -685,12 +671,13 @@ const resumeright = {
         {
           title: "Master of Science in Artificial Intelligence",
           subtitle: "London Metropolitan University, London",
-          date: "2025-Present",
+          date: "2025-2026",
           content: [],
         },
         {
           title: "Bachelor of Computer Science",
-          subtitle: "National University of Computer and Emerging Science, Karachi",
+          subtitle:
+            "National University of Computer and Emerging Science, Karachi",
           date: "2020 - 2024",
           content: [],
         },
@@ -711,7 +698,6 @@ const resumeright = {
   ],
 };
 
-//certificate cards
 const certifications = {
   certifications: [
     {
@@ -771,26 +757,24 @@ const certifications = {
   ],
 };
 
-// Contact Page
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
     profile_image_path: "contact.jpg",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI and Data science.",
+      "I am active across professional platforms and typically respond within 24 hours. Let's connect to discuss your Machine Learning, Agentic AI, or Data Science initiatives.",
   },
   addressSection: {},
   phoneSection: {},
 };
 
-//contact icons
 const socialMediaLinks = [
   {
     name: "Github",
     link: "https://github.com/waleedgul92",
     iconifyClassname: "simple-icons:hackerrank",
     fontAwesomeIcon: "fa-github",
-    backgroundColor: "#181717",
+    backgroundColor: "#ffffff",
   },
   {
     name: "LinkedIn",

@@ -4,7 +4,6 @@ import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import BannerImg from "./BannerImg";
-import Typewriter from "typewriter-effect";
 import CompetitiveSites from "../../components/competitiveSites/CompetitiveSites";
 import { competitiveSites } from "../../portfolio";
 
@@ -16,61 +15,55 @@ export function Greeting(props) {
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
-              <h1 className="greeting-text" style={{ color: theme.orange }}>
-                {greeting.title}
-              </h1>
-              <h1 className="greeting-sub" style={{ color: theme.grayText }}>
-                I'm <mark data-entity="person">{greeting.sub}</mark>
-              </h1>
-              <h1 className="greeting-typewriter" style={{ color: theme.blue }}>
-                <Typewriter
-                  onInit={(typewriter) => {
-                    typewriter
-                      .typeString("Agentic AI Engineer")
-                      .pauseFor(200)
-                      .deleteAll()
-                      .typeString("Data Scientist")
-                      .pauseFor(200)
-                      .deleteAll()
-                      .typeString("ML Engineer")
-                      .pauseFor(200)
-                      .deleteAll()
-                      .typeString("Data Analyst")
-                      .pauseFor(200)
-                      .deleteAll()
-                      .start();
-                  }}
-                  options={{
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
-              </h1>
               <span
-                className="greeting-text-span subTitle"
-                style={{ color: theme.text }}
+                className="greeting-top-label"
+                style={{ color: theme.orange }}
               >
-                <div className="entities">
-                  An <mark data-entity="noun">Agentic AI and Data Science expert</mark>{" "}
-                  dedicated to{" "}
-                  <mark data-entity="freelance">
-                    architecting autonomous multi-agent workflows
-                  </mark>{" "}
-                  with a focus on <mark data-entity="skill">LLM orchestration</mark>,
-                  leveraging <mark data-entity="tools">Agentic frameworks and MLOps tools</mark> to
-                  build resilient, production-ready intelligent applications
-                </div>
+                Agentic AI Engineer & ML Specialist
               </span>
+
+              <h1 className="greeting-name-huge">{greeting.sub}</h1>
+
+              <div
+                className="greeting-accent-line"
+                style={{ backgroundColor: theme.orange }}
+              ></div>
+
+              <div className="introduction-text" style={{ color: theme.text }}>
+                <p className="bio-paragraph">
+                  I am a <strong>Data Scientist</strong> and{" "}
+                  <strong>ML Engineer</strong> pursuing an MSc in AI at{" "}
+                  <strong>London Metropolitan University</strong> after
+                  graduating from <strong>FAST-NUCES</strong>. I develop core
+                  intelligent applications leveraging <strong>PyTorch</strong>{" "}
+                  and <strong>TensorFlow</strong>.
+                </p>
+
+                <p className="bio-paragraph">
+                  I specialize in deploying <strong>Agentic AI</strong>{" "}
+                  workflows and <strong>RAG</strong> pipelines via{" "}
+                  <strong>LangGraph</strong> and <strong>Ollama</strong>,
+                  serving these production-grade solutions using{" "}
+                  <strong>FastAPI</strong>, <strong>Docker</strong>, and{" "}
+                  <strong>k8s</strong> on <strong>AWS</strong>.
+                </p>
+              </div>
+
               <CompetitiveSites logos={competitiveSites.competitiveSites} />
+
               <div className="button-greeting-div">
-                <Button text="Contact me" href="/contact" />
-                <Button
-                  text="See my resume"
-                  newTab={true}
-                  href={
-                    "https://drive.google.com/drive/folders/1Ah_2lLJqiKwI6AV_MmgTWAtoK3-V9RHZ?usp=sharing"
-                  }
-                />
+                <div className="portfolio-btn-filled">
+                  <Button text="Contact Me" href="/contact" />
+                </div>
+                <div className="portfolio-btn-outlined">
+                  <Button
+                    text="View Resume"
+                    newTab={true}
+                    href={
+                      "https://drive.google.com/drive/folders/1Ah_2lLJqiKwI6AV_MmgTWAtoK3-V9RHZ?usp=sharing"
+                    }
+                  />
+                </div>
               </div>
             </div>
           </div>
