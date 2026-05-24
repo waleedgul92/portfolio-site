@@ -1,9 +1,37 @@
+.honors-header-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.honors-index {
+  color: #f2c811;
+  font-family: "Google Sans Bold", sans-serif;
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.honors-title {
+  color: #f2c811;
+  font-family: "Google Sans Bold", sans-serif;
+  font-size: 32px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.honors-header-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-left: 25px;
+}
+
 .honor-slider-container {
-  background: #171717;
-  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
   padding: 40px;
   border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   position: relative;
 }
 
@@ -18,16 +46,16 @@
   flex: 1.2;
   display: flex;
   justify-content: center;
-  background: #000;
+  background: rgba(0, 0, 0, 0.2);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 .slider-image-column img {
   max-width: 100%;
   max-height: 300px;
   object-fit: contain;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .slider-info-column {
@@ -37,20 +65,20 @@
 
 .slider-badge {
   display: inline-block;
-  background: rgba(0, 229, 255, 0.1);
-  color: #00e5ff;
+  background: rgba(242, 200, 17, 0.1);
+  color: #f2c811;
   padding: 5px 12px;
   border-radius: 4px;
-  font-size: 11px;
-  font-family: "Google Sans Bold";
+  font-size: 12px;
+  font-family: "Google Sans Bold", sans-serif;
   margin-bottom: 20px;
   letter-spacing: 1px;
 }
 
 .slider-title {
-  color: #f2c811;
+  color: #ffffff;
   font-size: 28px;
-  font-family: "Google Sans Bold";
+  font-family: "Google Sans Bold", sans-serif;
   margin-bottom: 15px;
 }
 
@@ -59,15 +87,17 @@
   line-height: 1.6;
   font-size: 15px;
   margin-bottom: 25px;
+  font-family: "Google Sans Regular", sans-serif;
 }
 
 .slider-meta {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
   padding-top: 15px;
   color: #868e96;
   font-size: 14px;
+  font-family: "Google Sans Regular", sans-serif;
 }
 
 .slider-dots {
@@ -81,49 +111,54 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.15);
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .dot.active {
-  background: #00e5ff;
-  box-shadow: 0 0 10px #00e5ff;
+  background: #f2c811;
+  box-shadow: 0 0 8px rgba(242, 200, 17, 0.6);
 }
 
 .column-header {
-  color: #00e5ff;
-  font-size: 14px;
-  letter-spacing: 1px;
+  color: #f2c811;
+  font-size: 20px;
+  letter-spacing: 0.5px;
   margin-bottom: 25px;
   text-transform: uppercase;
+  font-family: "Google Sans Medium", sans-serif;
 }
 
 .list-item {
   display: flex;
   gap: 12px;
-  padding: 12px;
+  padding: 14px;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s ease;
   margin-bottom: 10px;
+  background: transparent;
+  border-left: 3px solid transparent;
 }
 
 .list-item:hover {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .list-item.active {
-  background: rgba(0, 229, 255, 0.05);
-  border-left: 3px solid #00e5ff;
+  background: rgba(242, 200, 17, 0.04);
+  border-left: 3px solid #f2c811;
 }
 
 .list-item.active .item-title {
-  color: #00e5ff;
+  color: #f2c811;
 }
 
 .bullet {
   color: #f2c811;
   margin-top: 2px;
+  font-size: 16px;
 }
 
 .item-content {
@@ -134,23 +169,29 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 4px;
+  align-items: baseline;
+  gap: 15px;
 }
 
 .item-title {
   color: #ffffff;
-  font-size: 15px;
-  font-family: "Google Sans Medium";
+  font-size: 18px;
+  font-family: "Google Sans Medium", sans-serif;
+  font-weight: 600;
 }
 
 .item-date {
-  color: #666;
-  font-size: 12px;
+  color: #868e96;
+  font-size: 14px;
+  font-family: "Google Sans Regular", sans-serif;
+  white-space: nowrap;
 }
 
 .item-issuer {
-  color: #888;
-  font-size: 13px;
+  color: #a7a7a7;
+  font-size: 14px;
   display: block;
+  font-family: "Google Sans Regular", sans-serif;
 }
 
 @media (max-width: 900px) {

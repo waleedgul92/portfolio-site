@@ -41,45 +41,13 @@ class Certifications extends Component {
         }}
       >
         <Fade bottom duration={1000} distance="40px">
-          {/* Header Section */}
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "15px",
-              marginBottom: "40px",
-            }}
-          >
-            <span
-              style={{
-                color: "#00e5ff",
-                fontSize: "24px",
-                fontFamily: "Google Sans Bold",
-              }}
-            >
-              06.
-            </span>
-            <h1
-              style={{
-                color: "#ffffff",
-                fontSize: "32px",
-                fontFamily: "Google Sans Bold",
-                margin: 0,
-              }}
-            >
-              Honors & Accreditations
-            </h1>
-            <div
-              style={{
-                flexGrow: 1,
-                height: "1px",
-                backgroundColor: "rgba(255,255,255,0.1)",
-                marginLeft: "20px",
-              }}
-            ></div>
+          {/* Exact Match Header Section */}
+          <div className="honors-header-container">
+            <span className="honors-index"></span>
+            <h1 className="honors-title">Honors & Accreditations</h1>
+            <div className="honors-header-line"></div>
           </div>
 
-          {/* Slider Section */}
           <div id="honor-slider" className="honor-slider-container">
             <div className="slider-card">
               <div className="slider-image-column">
@@ -98,7 +66,7 @@ class Certifications extends Component {
                 </div>
               </div>
             </div>
-            {/* Dots */}
+
             <div className="slider-dots">
               {this.state.allHonors.map((_, i) => (
                 <div
@@ -112,7 +80,6 @@ class Certifications extends Component {
             </div>
           </div>
 
-          {/* Lists Section */}
           <div
             style={{
               display: "flex",
@@ -122,7 +89,6 @@ class Certifications extends Component {
               marginTop: "60px",
             }}
           >
-            {/* Awards Column */}
             <div style={{ flex: "1", minWidth: "320px" }}>
               <h3 className="column-header">
                 🏆 {awardsAndAchievements.title}
@@ -149,7 +115,6 @@ class Certifications extends Component {
               </div>
             </div>
 
-            {/* Certifications Column */}
             <div style={{ flex: "1", minWidth: "320px" }}>
               <h3 className="column-header">
                 🛡️ {professionalCertifications.title}
