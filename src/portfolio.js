@@ -650,6 +650,15 @@ const resumeleft = {
     title: ["Experience"],
     data: [
       {
+        title: "Data Science & AI Development",
+        subtitle: "Freelance",
+        date: "2024 - Present",
+        content: [
+          "Architected and deployed production-grade machine learning models with automated inference pipelines on cloud infrastructure.",
+          "Designed advanced RAG applications, autonomous agent workflows, and intelligent document extraction systems.",
+        ],
+      },
+      {
         title: "Data Analyst Intern",
         subtitle: "Global Shala",
         date: "June 2022 - July 2022",
@@ -671,7 +680,7 @@ const resumeright = {
         {
           title: "Master of Science in Artificial Intelligence",
           subtitle: "London Metropolitan University, London",
-          date: "2025-2026",
+          date: "2025 - 2026",
           content: [],
         },
         {
@@ -683,21 +692,8 @@ const resumeright = {
         },
       ],
     },
-    {
-      title: ["Freelance Work"],
-      data: [
-        {
-          title: "Data Science & AI Development",
-          content: [
-            "Architected and deployed production-grade machine learning models with automated inference pipelines on cloud infrastructure.",
-            "Designed advanced RAG applications, autonomous agent workflows, and intelligent document extraction systems.",
-          ],
-        },
-      ],
-    },
   ],
 };
-
 const certifications = {
   certifications: [
     {

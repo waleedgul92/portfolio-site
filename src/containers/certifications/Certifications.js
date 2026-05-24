@@ -24,7 +24,7 @@ class Certifications extends Component {
               className="certs-header"
               style={{
                 color: "#F2C811",
-                textAlign: "center",
+                textAlign: "left",
                 width: "100%",
                 fontSize: "36px",
                 marginBottom: "30px",

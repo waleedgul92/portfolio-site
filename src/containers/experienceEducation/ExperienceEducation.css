@@ -1,73 +1,105 @@
 .exp-edu-main {
   width: 90%;
-  padding: 40px 10px;
-  margin: 0px auto;
-  margin-top: 3rem;
+  margin: 0 auto;
+  padding: 40px 0;
 }
 
 .exp-edu-row {
   display: flex;
-  gap: 50px;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
 .exp-edu-column {
   flex: 1;
+  min-width: 320px;
 }
 
 .exp-edu-section-title {
-  font-size: 40px;
   font-family: "Google Sans Bold", sans-serif;
-  margin-bottom: 30px;
+  font-size: 32px;
+  margin-bottom: 40px;
+  padding-left: 15px;
 }
 
-.unique-sec-spacing {
-  margin-top: 40px;
+.timeline-container {
+  position: relative;
+  border-left: 3px solid #007bdc;
+  padding-left: 30px;
+  margin-left: 20px;
 }
 
-.exp-edu-card {
-  margin-bottom: 30px;
+.timeline-item {
+  position: relative;
+  margin-bottom: 45px;
 }
 
-.exp-edu-card h2 {
-  font-size: 24px;
-  font-family: "Google Sans Bold", sans-serif;
-  margin-bottom: 5px;
+.timeline-node {
+  position: absolute;
+  left: -38px;
+  top: 6px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #007bdc;
+  z-index: 2;
 }
 
-.exp-edu-card h4 {
-  font-size: 16px;
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.orange-badge {
+  background-color: #f9a602;
+  color: #000000;
+  padding: 6px 12px;
   font-family: "Google Sans Medium", sans-serif;
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-.exp-edu-date {
   font-size: 14px;
-  font-family: "Google Sans Regular", sans-serif;
-  opacity: 0.6;
-  margin-top: 0;
-  margin-bottom: 15px;
+  border-radius: 2px;
+  font-weight: 500;
 }
 
-.exp-edu-card ul {
-  padding-left: 20px;
+.duration-text {
+  font-size: 14px;
+  font-style: italic;
+  opacity: 0.8;
 }
 
-.exp-edu-card li {
-  font-size: 16px;
+.subtitle-text {
+  font-family: "Google Sans Bold", sans-serif;
+  font-size: 18px;
+  margin: 0 0 15px 0;
+}
+
+.bullet-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.bullet-list li {
+  font-size: 15px;
   line-height: 1.6;
-  font-family: "Google Sans Regular", sans-serif;
-  margin-bottom: 8px;
-  opacity: 0.85;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 20px;
+  opacity: 0.9;
 }
 
-@media (max-width: 992px) {
+.bullet-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
   .exp-edu-row {
     flex-direction: column;
-    gap: 30px;
-  }
-  .exp-edu-section-title {
-    font-size: 30px;
-    text-align: center;
+    gap: 40px;
   }
 }

@@ -15,12 +15,42 @@ class Home extends Component {
     return (
       <div>
         <Header theme={theme} />
-        <Greeting theme={theme} />
-        <ExperienceEducation theme={theme} />
-        <Projects theme={theme} />
-        <SkillsSection theme={theme} />
-        <Certifications theme={theme} />
-        <Contact theme={theme} />
+        <div style={{ backgroundColor: "transparent" }}>
+          <Greeting theme={theme} />
+        </div>
+        <div
+          style={{
+            backgroundColor: "rgba(255, 255, 255, 0.015)",
+            width: "100%",
+            padding: "20px 0",
+          }}
+        >
+          <ExperienceEducation theme={theme} />
+        </div>
+        <div style={{ backgroundColor: "transparent" }}>
+          <Projects theme={theme} />
+        </div>
+        <div
+          style={{
+            backgroundColor: "rgba(255, 255, 255, 0.015)",
+            width: "100%",
+            padding: "20px 0",
+          }}
+        >
+          <SkillsSection theme={theme} />
+        </div>
+        <div style={{ backgroundColor: "transparent" }}>
+          <Certifications theme={theme} />
+        </div>
+        <div
+          style={{
+            backgroundColor: "rgba(255, 255, 255, 0.015)",
+            width: "100%",
+            padding: "20px 0",
+          }}
+        >
+          <Contact theme={theme} />
+        </div>
         <Footer theme={theme} />
         <TopButton theme={theme} />
       </div>

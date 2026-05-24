@@ -1,13 +1,10 @@
 import React, { Component } from "react";
 import { Fade } from "react-reveal";
-import "./Contact.css";
 import { contactPageData } from "../../portfolio.js";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import contactMail from "../../assests/images/contactMail.png";
+import addressImg from "../../assests/images/address_image.svg";
 
 const ContactData = contactPageData.contactSection;
-const addressSection = contactPageData.addressSection;
-const phoneSection = contactPageData.phoneSection;
 
 class Contact extends Component {
   constructor(props) {
@@ -20,10 +17,10 @@ class Contact extends Component {
   render() {
     const theme = this.props.theme;
 
-    const customButtonStyle = {
-      backgroundColor: this.state.isHovered ? theme.body : theme.text,
-      color: this.state.isHovered ? theme.text : theme.body,
-      border: `1px solid ${theme.text}`,
+    const filledButtonStyle = {
+      backgroundColor: this.state.isHovered ? "transparent" : "#FFFFFF",
+      color: this.state.isHovered ? "#FFFFFF" : "#000000",
+      border: "1px solid #FFFFFF",
       padding: "13px 28px",
       borderRadius: "5px",
       display: "inline-flex",
@@ -35,12 +32,10 @@ class Contact extends Component {
       fontFamily: "Google Sans Medium, sans-serif",
       cursor: "pointer",
       transition: "all 0.2s ease-in-out",
-      boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.15)",
     };
 
     return (
       <div
-        className="contact-main"
         id="contact"
         style={{
           width: "90%",
@@ -51,18 +46,22 @@ class Contact extends Component {
       >
         <Fade bottom duration={1000} distance="40px">
           <div
-            style={{ width: "100%", textAlign: "center", marginBottom: "40px" }}
+            style={{ width: "100%", textAlign: "left", marginBottom: "40px" }}
           >
             <h1
-              className="contact-heading-text"
-              style={{ color: "#F2C811", fontSize: "40px", margin: "0 auto" }}
+              style={{
+                color: "#F2C811",
+                fontSize: "40px",
+                margin: "0 auto",
+                fontFamily: "Google Sans Bold, sans-serif",
+                textAlign: "left",
+              }}
             >
               {ContactData["title"]}
             </h1>
           </div>
 
           <div
-            className="address-heading-div"
             style={{
               display: "flex",
               alignItems: "center",
@@ -72,7 +71,6 @@ class Contact extends Component {
             }}
           >
             <div
-              className="contact-heading-img-div"
               style={{
                 flex: "1",
                 minWidth: "300px",
@@ -81,18 +79,20 @@ class Contact extends Component {
               }}
             >
               <img
-                src={contactMail}
+                src={addressImg}
                 alt="Contact Illustration"
-                style={{ maxWidth: "100%", height: "auto", maxHeight: "350px" }}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  maxHeight: "320px",
+                  objectFit: "contain",
+                }}
               />
             </div>
 
-            <div
-              className="address-heading-text-div"
-              style={{ flex: "1", minWidth: "300px" }}
-            >
+            <div style={{ flex: "1", minWidth: "300px" }}>
               <p
-                className="contact-header-detail-text subTitle"
+                className="subTitle"
                 style={{
                   color: theme.text,
                   fontSize: "18px",
@@ -104,64 +104,22 @@ class Contact extends Component {
                 {ContactData["description"]}
               </p>
 
-              <div style={{ marginBottom: "25px" }}>
+              <div style={{ marginBottom: "30px" }}>
                 <SocialMedia theme={theme} />
               </div>
 
-              <div style={{ marginTop: "10px" }}>
+              <div>
                 <a
                   href="mailto:hwaleed0035@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={customButtonStyle}
+                  style={filledButtonStyle}
                   onMouseEnter={() => this.setState({ isHovered: true })}
                   onMouseLeave={() => this.setState({ isHovered: false })}
                 >
                   Drop a mail
                 </a>
               </div>
-
-              {addressSection && addressSection.title && (
-                <div>
-                  <h1
-                    className="address-heading-text"
-                    style={{
-                      color: theme.text,
-                      fontSize: "24px",
-                      marginTop: "20px",
-                    }}
-                  >
-                    {addressSection["title"]}
-                  </h1>
-                  <p
-                    className="contact-header-detail-text subTitle"
-                    style={{ color: theme.blue }}
-                  >
-                    {addressSection["subtitle"]}
-                  </p>
-                </div>
-              )}
-
-              {phoneSection && phoneSection.title && (
-                <div>
-                  <h1
-                    className="address-heading-text"
-                    style={{
-                      color: theme.text,
-                      fontSize: "24px",
-                      marginTop: "20px",
-                    }}
-                  >
-                    {phoneSection["title"]}
-                  </h1>
-                  <p
-                    className="contact-header-detail-text subTitle"
-                    style={{ color: theme.blue }}
-                  >
-                    {phoneSection["subtitle"]}
-                  </p>
-                </div>
-              )}
             </div>
           </div>
         </Fade>

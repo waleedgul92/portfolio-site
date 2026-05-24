@@ -12,14 +12,14 @@ export default function Projects(props) {
       style={{ width: "90%", margin: "0 auto", marginTop: "3rem" }}
     >
       <Fade bottom duration={1000} distance="40px">
-        <div className="projects-header-div" style={{ textAlign: "center" }}>
+        <div className="projects-header-div" style={{ textAlign: "left" }}>
           <h1
             className="projects-header"
             style={{
               color: "#F2C811",
               fontSize: "36px",
               marginBottom: "10px",
-              textAlign: "center",
+              textAlign: "left",
             }}
           >
             {projectsHeader.title}
@@ -30,7 +30,7 @@ export default function Projects(props) {
               color: theme.text,
               marginBottom: "30px",
               opacity: 0.8,
-              textAlign: "center",
+              textAlign: "left",
               fontSize: "16px",
             }}
           >
