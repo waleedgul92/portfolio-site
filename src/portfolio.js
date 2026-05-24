@@ -63,11 +63,8 @@ const skills = {
       title: "Data Science, AI & LLM",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Developing RAG-based applications using LangChain and vector databases for intelligent document processing",
-        "⚡ Building computer vision models for image classification, object detection, and OCR applications",
-        "⚡ Creating NLP solutions including text extraction, translation, and subtitle generation systems",
-        "⚡ Implementing deep learning models using TensorFlow, Keras, PyTorch for various ML use cases",
-        "⚡ Fine-tuning large language models for custom datasets and domain-specific tasks",
+        "Building scalable production-ready machine learning pipelines",
+        "Designing advanced RAG applications and autonomous agent workflows",
       ],
       softwareSkills: [
         {
@@ -82,12 +79,16 @@ const skills = {
           fontAwesomeClassname: "simple-icons:langchain",
           style: {
             backgroundColor: "transparent",
-            color: "#1C3C3C",
+            color: "#ffffff",
           },
         },
         {
           skillName: "OpenCV",
           fontAwesomeClassname: "simple-icons:opencv",
+          style: {
+            backgroundColor: "transparent",
+            color: "#ffffff",
+          },
         },
         {
           skillName: "scikit-learn",
@@ -99,14 +100,17 @@ const skills = {
         },
         {
           skillName: "PyTorch",
-          fontAwesomeClassname: "logos-pytorch",
+          fontAwesomeClassname: "logos:pytorch-icon",
+          style: {
+            backgroundColor: "transparent",
+          },
         },
         {
           skillName: "Ollama",
           fontAwesomeClassname: "simple-icons:ollama",
           style: {
             backgroundColor: "transparent",
-            color: "#000000",
+            color: "#ffffff",
           },
         },
       ],
