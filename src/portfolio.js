@@ -231,6 +231,7 @@ const projectcards = {
     {
       title: "Apex Synthesis",
       img_path: "apex.jpg",
+      video_path: "Apex Synthesis.webm",
       description:
         "AI-driven Decision Intelligence pipeline using LangGraph and multiple LLM agents to evaluate executive candidates against high-stakes crisis scenarios.",
       tags: [
@@ -257,6 +258,7 @@ const projectcards = {
 
     {
       title: "Crop-Doc AI",
+      video_path: "crop doc.webm",
       img_path: "crop.jpeg",
       description:
         "VGG-16 based CNN architecture for rapid crop disease detection, deployed as a REST API on Google Cloud Platform (GCP).",
@@ -285,6 +287,7 @@ const projectcards = {
     {
       title: "Blog Writing Agent",
       img_path: "blog.png",
+      video_path: "blog_writng.webm",
       description:
         "Highly concurrent, multi-agent pipeline using LangGraph and FastAPI that performs live web research to autonomously generate structured blog posts.",
       tags: [
@@ -312,6 +315,7 @@ const projectcards = {
     {
       title: "Scholar-AI ",
       img_path: "scolar.png",
+      video_path: "Scholar.webm",
       description:
         "A RAG-based research assistant that processes ArXiv papers and PDF documents, providing contextual Q&A using LangChain and ChromaDB",
       tags: [
@@ -343,6 +347,7 @@ const projectcards = {
     {
       title: "CaptionCrafter",
       img_path: "caption.png",
+      video_path: "caption.webm",
       description:
         "Automated video subtitle generation and translation tool supporting multiple languages using Whisper and Google Gemini",
       tags: [
@@ -433,6 +438,7 @@ const projectcards = {
     {
       title: "ColdComposeAI",
       img_path: "cold.png",
+      video_path: "ColdComposeAI.webm",
       description:
         "Automated cold email generator for job applications that matches skills with job requirements and integrates portfolio links",
       tags: [
@@ -460,6 +466,121 @@ const projectcards = {
       code: "https://github.com/waleedgul92/ColdComposeAI",
       linkcolor: "white",
     },
+
+    {
+      title: "Traffic Sign Recognition",
+      img_path: "traffic.png",
+      description:
+        "Dual approach system using Vision Transformers with DINO self-supervision and CNN for German traffic sign classification",
+      tags: [
+        {
+          lang: "Python",
+          color: "#004782",
+        },
+        {
+          lang: "Vision Transformer",
+          color: "#4257f5",
+        },
+        {
+          lang: "CNN",
+          color: "#00a100",
+        },
+        {
+          lang: "Computer Vision",
+          color: "#820032",
+        },
+      ],
+      code:
+        "https://github.com/waleedgul92/Traffic-Sign-Classifcation-using-CNN-and-Vision-Transformer",
+      linkcolor: "white",
+    },
+    {
+      title: "Fine-Tuned LLM for OCR",
+      img_path: "ocr.png",
+      description:
+        "Fine-tuned TrOCR model for captcha text recognition with custom dataset training and inference pipeline",
+      tags: [
+        {
+          lang: "Python",
+          color: "#004782",
+        },
+        {
+          lang: "TrOCR",
+          color: "#4257f5",
+        },
+        {
+          lang: "Fine-tuning",
+          color: "#c47206",
+        },
+        {
+          lang: "OCR",
+          color: "#00a100",
+        },
+        {
+          lang: "Transformers",
+          color: "#ff4b4b",
+        },
+      ],
+      code:
+        "https://github.com/waleedgul92/OCR-using-Fine-Tuning-LLM-on-custom-datatset",
+      linkcolor: "white",
+    },
+    {
+      title: "StyleGAN Monet",
+      img_path: "style.png",
+      video_path: "stylemonet.webm",
+      description:
+        "CycleGAN implementation from scratch to convert regular paintings into Monet art-style paintings",
+      tags: [
+        {
+          lang: "Python",
+          color: "#004782",
+        },
+        {
+          lang: "CycleGAN",
+          color: "#4257f5",
+        },
+        {
+          lang: "Style Transfer",
+          color: "#c47206",
+        },
+        {
+          lang: "GANs",
+          color: "#820032",
+        },
+      ],
+      code: "https://github.com/waleedgul92/StyleGAN-Monet",
+      linkcolor: "white",
+    },
+    {
+      title: "Layer7Defend IDS",
+      img_path: "layer.png",
+      description:
+        "Intrusion Detection System for Edge IIoT environments with ML-based attack classification and network analysis",
+      tags: [
+        {
+          lang: "Python",
+          color: "#004782",
+        },
+        {
+          lang: "Cybersecurity",
+          color: "#820032",
+        },
+        {
+          lang: "IDS",
+          color: "#ff4b4b",
+        },
+
+        {
+          lang: "IoT",
+          color: "#00a100",
+        },
+      ],
+
+      code: "https://github.com/waleedgul92/Layer7Defend",
+      linkcolor: "white",
+    },
+
     {
       title: "Walmart Price Prediction",
       img_path: "wallmart.png",
@@ -532,118 +653,6 @@ const projectcards = {
         },
       ],
       code: "https://github.com/waleedgul92/CardSafe-Europe",
-      linkcolor: "white",
-    },
-    {
-      title: "Traffic Sign Recognition",
-      img_path: "traffic.png",
-      description:
-        "Dual approach system using Vision Transformers with DINO self-supervision and CNN for German traffic sign classification",
-      tags: [
-        {
-          lang: "Python",
-          color: "#004782",
-        },
-        {
-          lang: "Vision Transformer",
-          color: "#4257f5",
-        },
-        {
-          lang: "CNN",
-          color: "#00a100",
-        },
-        {
-          lang: "Computer Vision",
-          color: "#820032",
-        },
-      ],
-      code:
-        "https://github.com/waleedgul92/Traffic-Sign-Classifcation-using-CNN-and-Vision-Transformer",
-      linkcolor: "white",
-    },
-    {
-      title: "Fine-Tuned LLM for OCR",
-      img_path: "ocr.png",
-      description:
-        "Fine-tuned TrOCR model for captcha text recognition with custom dataset training and inference pipeline",
-      tags: [
-        {
-          lang: "Python",
-          color: "#004782",
-        },
-        {
-          lang: "TrOCR",
-          color: "#4257f5",
-        },
-        {
-          lang: "Fine-tuning",
-          color: "#c47206",
-        },
-        {
-          lang: "OCR",
-          color: "#00a100",
-        },
-        {
-          lang: "Transformers",
-          color: "#ff4b4b",
-        },
-      ],
-      code:
-        "https://github.com/waleedgul92/OCR-using-Fine-Tuning-LLM-on-custom-datatset",
-      linkcolor: "white",
-    },
-    {
-      title: "Layer7Defend IDS",
-      img_path: "layer.png",
-      description:
-        "Intrusion Detection System for Edge IIoT environments with ML-based attack classification and network analysis",
-      tags: [
-        {
-          lang: "Python",
-          color: "#004782",
-        },
-        {
-          lang: "Cybersecurity",
-          color: "#820032",
-        },
-        {
-          lang: "IDS",
-          color: "#ff4b4b",
-        },
-
-        {
-          lang: "IoT",
-          color: "#00a100",
-        },
-      ],
-
-      code: "https://github.com/waleedgul92/Layer7Defend",
-      linkcolor: "white",
-    },
-    {
-      title: "StyleGAN Monet",
-      img_path: "style.png",
-      description:
-        "CycleGAN implementation from scratch to convert regular paintings into Monet art-style paintings",
-      tags: [
-        {
-          lang: "Python",
-          color: "#004782",
-        },
-        {
-          lang: "CycleGAN",
-          color: "#4257f5",
-        },
-        {
-          lang: "Style Transfer",
-          color: "#c47206",
-        },
-        {
-          lang: "GANs",
-          color: "#820032",
-        },
-      ],
-      code: "https://github.com/waleedgul92/StyleGAN-Monet",
       linkcolor: "white",
     },
   ],

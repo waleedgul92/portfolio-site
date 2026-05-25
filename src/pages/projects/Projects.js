@@ -61,7 +61,7 @@ class Projects extends Component {
                       border: "1px solid rgba(255, 255, 255, 0.04)",
                     }}
                   >
-                    {repo.img_path && (
+                    {(repo.video_path || repo.img_path) && (
                       <div
                         style={{
                           width: "100%",
@@ -70,15 +70,31 @@ class Projects extends Component {
                           borderBottom: "1px solid rgba(255, 255, 255, 0.04)",
                         }}
                       >
-                        <img
-                          src={require(`../../assets/projects/${repo.img_path}`)}
-                          alt={repo.title}
-                          style={{
-                            width: "100%",
-                            height: "100%",
-                            objectFit: "cover",
-                          }}
-                        />
+                        {repo.video_path ? (
+                          <video
+                            src={require(`../../assets/projects/${repo.video_path}`)}
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            preload="auto"
+                            style={{
+                              width: "100%",
+                              height: "100%",
+                              objectFit: "cover",
+                            }}
+                          />
+                        ) : (
+                          <img
+                            src={require(`../../assets/projects/${repo.img_path}`)}
+                            alt={repo.title}
+                            style={{
+                              width: "100%",
+                              height: "100%",
+                              objectFit: "cover",
+                            }}
+                          />
+                        )}
                       </div>
                     )}
                     <div

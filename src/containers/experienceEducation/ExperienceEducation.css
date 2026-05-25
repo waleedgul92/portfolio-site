@@ -2,12 +2,16 @@
   width: 90%;
   margin: 0 auto;
   padding: 40px 0;
+  display: flow-root;
+  clear: both;
+  position: relative;
 }
 
 .exp-edu-row {
   display: flex;
   gap: 60px;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .exp-edu-column {
@@ -100,6 +104,10 @@
 @media (max-width: 768px) {
   .exp-edu-row {
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
+  }
+  .exp-edu-column {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
