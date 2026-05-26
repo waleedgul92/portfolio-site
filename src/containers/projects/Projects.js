@@ -3,13 +3,21 @@ import "./Project.css";
 import { projectcards, projectsHeader } from "../../portfolio";
 import { Fade } from "react-reveal";
 
+function safeRequire(path) {
+  try {
+    return require(`../../assets/projects/${path}`);
+  } catch (e) {
+    return null;
+  }
+}
+
 export default function Projects(props) {
   const theme = props.theme;
   return (
     <div
       className="main"
       id="projects"
-      style={{ margin: "0 auto", marginTop: "3rem" }} // ← remove inline width, let CSS control it
+      style={{ margin: "0 auto", marginTop: "3rem" }}
     >
       <Fade bottom duration={1000} distance="40px">
         <div className="projects-header-div" style={{ textAlign: "left" }}>
@@ -37,15 +45,22 @@ export default function Projects(props) {
             {projectsHeader.description}
           </p>
         </div>
+
         <div
           className="repo-cards-div-main"
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", // ← 260 not 280
+            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
             gap: "20px",
           }}
         >
           {projectcards.list.map((repo, index) => {
+            const videoSrc = repo.video_path
+              ? safeRequire(repo.video_path)
+              : null;
+            const imgSrc = repo.img_path ? safeRequire(repo.img_path) : null;
+            const hasMedia = videoSrc || imgSrc;
+
             return (
               <div
                 key={index}
@@ -59,7 +74,7 @@ export default function Projects(props) {
                   border: "1px solid rgba(255, 255, 255, 0.04)",
                 }}
               >
-                {(repo.video_path || repo.img_path) && (
+                {hasMedia && (
                   <div
                     style={{
                       width: "100%",
@@ -68,9 +83,9 @@ export default function Projects(props) {
                       borderBottom: "1px solid rgba(255, 255, 255, 0.04)",
                     }}
                   >
-                    {repo.video_path ? (
+                    {videoSrc ? (
                       <video
-                        src={require(`../../assets/projects/${repo.video_path}`)}
+                        src={videoSrc}
                         autoPlay
                         loop
                         muted
@@ -84,7 +99,7 @@ export default function Projects(props) {
                       />
                     ) : (
                       <img
-                        src={require(`../../assets/projects/${repo.img_path}`)}
+                        src={imgSrc}
                         alt={repo.title}
                         style={{
                           width: "100%",
@@ -95,6 +110,7 @@ export default function Projects(props) {
                     )}
                   </div>
                 )}
+
                 <div
                   style={{
                     padding: "16px",
