@@ -1,7 +1,6 @@
 import React from "react";
 import "./Project.css";
 import { projectcards, projectsHeader } from "../../portfolio";
-import { Fade } from "react-reveal";
 
 export default function Projects(props) {
   const theme = props.theme;
@@ -11,171 +10,173 @@ export default function Projects(props) {
       id="projects"
       style={{ margin: "0 auto", marginTop: "3rem", width: "90%" }}
     >
-      <Fade bottom duration={1000} distance="40px">
-        <div className="projects-header-div" style={{ textAlign: "left" }}>
-          <h1
-            className="projects-header"
-            style={{
-              color: "#F2C811",
-              fontSize: "36px",
-              marginBottom: "10px",
-              textAlign: "left",
-            }}
-          >
-            {projectsHeader.title}
-          </h1>
-          <p
-            className="projects-subtitle"
-            style={{
-              color: theme?.text || "#ffffff",
-              marginBottom: "30px",
-              opacity: 0.8,
-              textAlign: "left",
-              fontSize: "16px",
-            }}
-          >
-            {projectsHeader.description}
-          </p>
-        </div>
-
-        <div
-          className="repo-cards-div-main"
+      <div className="projects-header-div" style={{ textAlign: "left" }}>
+        <h1
+          className="projects-header"
           style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: "20px",
+            color: "#F2C811",
+            fontSize: "36px",
+            marginBottom: "10px",
+            textAlign: "left",
           }}
         >
-          {projectcards.list.map((repo, index) => {
-            return (
-              <div
-                key={index}
-                className="repo-card-div"
-                style={{
-                  backgroundColor: "rgba(255, 255, 255, 0.02)",
-                  borderRadius: "6px",
-                  overflow: "hidden",
-                  display: "flex",
-                  flexDirection: "column",
-                  border: "1px solid rgba(255, 255, 255, 0.04)",
-                }}
-              >
-                {(repo.video_path || repo.img_path) && (
-                  <div
-                    style={{
-                      width: "100%",
-                      height: "150px",
-                      overflow: "hidden",
-                      borderBottom: "1px solid rgba(255, 255, 255, 0.04)",
-                      position: "relative",
-                      backgroundColor: "#000000",
-                    }}
-                  >
-                    {repo.video_path ? (
-                      <video
-                        src={require(`../../assets/projects/${repo.video_path}`)}
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="auto"
-                        style={{
-                          width: "100%",
-                          height: "100%",
-                          objectFit: "cover",
-                          display: "block",
-                        }}
-                      />
-                    ) : (
-                      <img
-                        src={require(`../../assets/projects/${repo.img_path}`)}
-                        alt={repo.title}
-                        style={{
-                          width: "100%",
-                          height: "100%",
-                          objectFit: "cover",
-                          display: "block",
-                        }}
-                      />
-                    )}
-                  </div>
-                )}
+          {projectsHeader.title}
+        </h1>
+        <p
+          className="projects-subtitle"
+          style={{
+            color: theme?.text || "#ffffff",
+            marginBottom: "30px",
+            opacity: 0.8,
+            textAlign: "left",
+            fontSize: "16px",
+          }}
+        >
+          {projectsHeader.description}
+        </p>
+      </div>
 
+      <div
+        className="repo-cards-div-main"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+          gap: "20px",
+          opacity: "1 !important",
+          visibility: "visible !important",
+        }}
+      >
+        {projectcards.list.map((repo, index) => {
+          return (
+            <div
+              key={index}
+              className="repo-card-div"
+              style={{
+                backgroundColor: "rgba(255, 255, 255, 0.02)",
+                borderRadius: "6px",
+                overflow: "hidden",
+                display: "flex",
+                flexDirection: "column",
+                border: "1px solid rgba(255, 255, 255, 0.04)",
+                opacity: "1 !important",
+                visibility: "visible !important",
+              }}
+            >
+              {(repo.video_path || repo.img_path) && (
                 <div
                   style={{
-                    padding: "16px",
-                    flexGrow: 1,
-                    display: "flex",
-                    flexDirection: "column",
+                    width: "100%",
+                    height: "150px",
+                    overflow: "hidden",
+                    borderBottom: "1px solid rgba(255, 255, 255, 0.04)",
+                    position: "relative",
+                    backgroundColor: "#000000",
                   }}
                 >
-                  <p
-                    style={{
-                      color: theme?.text || "#ffffff",
-                      fontSize: "18px",
-                      fontWeight: "bold",
-                      margin: "0 0 8px 0",
-                    }}
-                  >
-                    {repo.title}
-                  </p>
-                  <p
-                    style={{
-                      color: theme?.text || "#a7a7a7",
-                      opacity: 0.7,
-                      fontSize: "13px",
-                      lineHeight: "1.5",
-                      margin: "0 0 16px 0",
-                      flexGrow: 1,
-                    }}
-                  >
-                    {repo.description}
-                  </p>
-                  <div
-                    style={{
-                      display: "flex",
-                      flexWrap: "wrap",
-                      gap: "6px",
-                      marginBottom: "16px",
-                    }}
-                  >
-                    {repo.tags.map((tag, i) => (
-                      <span
-                        key={i}
-                        style={{
-                          backgroundColor: tag.color,
-                          color: "#ffffff",
-                          padding: "3px 8px",
-                          borderRadius: "4px",
-                          fontSize: "11px",
-                          fontWeight: "600",
-                        }}
-                      >
-                        {tag.lang}
-                      </span>
-                    ))}
-                  </div>
-                  <div>
-                    <a
-                      href={repo.code}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                  {repo.video_path ? (
+                    <video
+                      src={require(`../../assets/projects/${repo.video_path}`)}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      preload="auto"
                       style={{
-                        color: "#F2C811",
-                        textDecoration: "none",
-                        fontWeight: "bold",
-                        fontSize: "13px",
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        display: "block",
+                      }}
+                    />
+                  ) : (
+                    <img
+                      src={require(`../../assets/projects/${repo.img_path}`)}
+                      alt={repo.title}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        display: "block",
+                      }}
+                    />
+                  )}
+                </div>
+              )}
+
+              <div
+                style={{
+                  padding: "16px",
+                  flexGrow: 1,
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <p
+                  style={{
+                    color: theme?.text || "#ffffff",
+                    fontSize: "18px",
+                    fontWeight: "bold",
+                    margin: "0 0 8px 0",
+                  }}
+                >
+                  {repo.title}
+                </p>
+                <p
+                  style={{
+                    color: theme?.text || "#a7a7a7",
+                    opacity: 0.7,
+                    fontSize: "13px",
+                    lineHeight: "1.5",
+                    margin: "0 0 16px 0",
+                    flexGrow: 1,
+                  }}
+                >
+                  {repo.description}
+                </p>
+                <div
+                  style={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    gap: "6px",
+                    marginBottom: "16px",
+                  }}
+                >
+                  {repo.tags.map((tag, i) => (
+                    <span
+                      key={i}
+                      style={{
+                        backgroundColor: tag.color,
+                        color: "#ffffff",
+                        padding: "3px 8px",
+                        borderRadius: "4px",
+                        fontSize: "11px",
+                        fontWeight: "600",
                       }}
                     >
-                      View Code →
-                    </a>
-                  </div>
+                      {tag.lang}
+                    </span>
+                  ))}
+                </div>
+                <div>
+                  <a
+                    href={repo.code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      color: "#F2C811",
+                      textDecoration: "none",
+                      fontWeight: "bold",
+                      fontSize: "13px",
+                    }}
+                  >
+                    View Code →
+                  </a>
                 </div>
               </div>
-            );
-          })}
-        </div>
-      </Fade>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
