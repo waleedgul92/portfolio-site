@@ -3,21 +3,13 @@ import "./Project.css";
 import { projectcards, projectsHeader } from "../../portfolio";
 import { Fade } from "react-reveal";
 
-function safeRequire(path) {
-  try {
-    return require(`../../assets/projects/${path}`);
-  } catch (e) {
-    return null;
-  }
-}
-
 export default function Projects(props) {
   const theme = props.theme;
   return (
     <div
       className="main"
       id="projects"
-      style={{ margin: "0 auto", marginTop: "3rem" }}
+      style={{ margin: "0 auto", marginTop: "3rem", width: "90%" }}
     >
       <Fade bottom duration={1000} distance="40px">
         <div className="projects-header-div" style={{ textAlign: "left" }}>
@@ -35,7 +27,7 @@ export default function Projects(props) {
           <p
             className="projects-subtitle"
             style={{
-              color: theme.text,
+              color: theme?.text || "#ffffff",
               marginBottom: "30px",
               opacity: 0.8,
               textAlign: "left",
@@ -50,17 +42,11 @@ export default function Projects(props) {
           className="repo-cards-div-main"
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
             gap: "20px",
           }}
         >
           {projectcards.list.map((repo, index) => {
-            const videoSrc = repo.video_path
-              ? safeRequire(repo.video_path)
-              : null;
-            const imgSrc = repo.img_path ? safeRequire(repo.img_path) : null;
-            const hasMedia = videoSrc || imgSrc;
-
             return (
               <div
                 key={index}
@@ -74,18 +60,20 @@ export default function Projects(props) {
                   border: "1px solid rgba(255, 255, 255, 0.04)",
                 }}
               >
-                {hasMedia && (
+                {(repo.video_path || repo.img_path) && (
                   <div
                     style={{
                       width: "100%",
                       height: "150px",
                       overflow: "hidden",
                       borderBottom: "1px solid rgba(255, 255, 255, 0.04)",
+                      position: "relative",
+                      backgroundColor: "#000000",
                     }}
                   >
-                    {videoSrc ? (
+                    {repo.video_path ? (
                       <video
-                        src={videoSrc}
+                        src={require(`../../assets/projects/${repo.video_path}`)}
                         autoPlay
                         loop
                         muted
@@ -95,16 +83,18 @@ export default function Projects(props) {
                           width: "100%",
                           height: "100%",
                           objectFit: "cover",
+                          display: "block",
                         }}
                       />
                     ) : (
                       <img
-                        src={imgSrc}
+                        src={require(`../../assets/projects/${repo.img_path}`)}
                         alt={repo.title}
                         style={{
                           width: "100%",
                           height: "100%",
                           objectFit: "cover",
+                          display: "block",
                         }}
                       />
                     )}
@@ -121,7 +111,7 @@ export default function Projects(props) {
                 >
                   <p
                     style={{
-                      color: theme.text,
+                      color: theme?.text || "#ffffff",
                       fontSize: "18px",
                       fontWeight: "bold",
                       margin: "0 0 8px 0",
@@ -131,7 +121,7 @@ export default function Projects(props) {
                   </p>
                   <p
                     style={{
-                      color: theme.text,
+                      color: theme?.text || "#a7a7a7",
                       opacity: 0.7,
                       fontSize: "13px",
                       lineHeight: "1.5",
