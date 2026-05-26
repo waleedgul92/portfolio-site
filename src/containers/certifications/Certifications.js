@@ -26,6 +26,20 @@ class Certifications extends Component {
     }
   };
 
+  nextHonor = () => {
+    this.setState((prevState) => ({
+      activeIndex: (prevState.activeIndex + 1) % prevState.allHonors.length,
+    }));
+  };
+
+  prevHonor = () => {
+    this.setState((prevState) => ({
+      activeIndex:
+        (prevState.activeIndex - 1 + prevState.allHonors.length) %
+        prevState.allHonors.length,
+    }));
+  };
+
   render() {
     const currentHonor = this.state.allHonors[this.state.activeIndex];
 
@@ -41,7 +55,6 @@ class Certifications extends Component {
         }}
       >
         <Fade bottom duration={1000} distance="40px">
-          {/* Exact Match Header Section */}
           <div className="honors-header-container">
             <span className="honors-index"></span>
             <h1 className="honors-title">Honors & Accreditations</h1>
@@ -49,6 +62,10 @@ class Certifications extends Component {
           </div>
 
           <div id="honor-slider" className="honor-slider-container">
+            <div className="slider-arrow left" onClick={this.prevHonor}>
+              ‹
+            </div>
+
             <div className="slider-card">
               <div className="slider-image-column">
                 <img
@@ -67,16 +84,8 @@ class Certifications extends Component {
               </div>
             </div>
 
-            <div className="slider-dots">
-              {this.state.allHonors.map((_, i) => (
-                <div
-                  key={i}
-                  className={`dot ${
-                    this.state.activeIndex === i ? "active" : ""
-                  }`}
-                  onClick={() => this.setState({ activeIndex: i })}
-                ></div>
-              ))}
+            <div className="slider-arrow right" onClick={this.nextHonor}>
+              ›
             </div>
           </div>
 

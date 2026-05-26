@@ -30,7 +30,7 @@
 .honor-slider-container {
   background: rgba(255, 255, 255, 0.02);
   border-radius: 8px;
-  padding: 40px;
+  padding: 40px 60px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   position: relative;
 }
@@ -39,54 +39,61 @@
   display: flex;
   gap: 40px;
   align-items: center;
-  min-height: 350px;
+  min-height: 320px;
 }
 
 .slider-image-column {
-  flex: 1.2;
+  flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
   background: rgba(0, 0, 0, 0.2);
   padding: 20px;
   border-radius: 6px;
+  height: 260px;
+  box-sizing: border-box;
 }
 
 .slider-image-column img {
-  max-width: 100%;
-  max-height: 300px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   border-radius: 4px;
 }
 
 .slider-info-column {
-  flex: 1;
+  flex: 1.2;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .slider-badge {
   display: inline-block;
+  align-self: flex-start;
   background: rgba(242, 200, 17, 0.1);
   color: #f2c811;
   padding: 5px 12px;
   border-radius: 4px;
   font-size: 12px;
   font-family: "Google Sans Bold", sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   letter-spacing: 1px;
 }
 
 .slider-title {
   color: #ffffff;
-  font-size: 28px;
+  font-size: 26px;
   font-family: "Google Sans Bold", sans-serif;
-  margin-bottom: 15px;
+  margin: 0 0 12px 0;
 }
 
 .slider-desc {
   color: #a7a7a7;
   line-height: 1.6;
-  font-size: 15px;
-  margin-bottom: 25px;
+  font-size: 14px;
+  margin: 0 0 20px 0;
   font-family: "Google Sans Regular", sans-serif;
 }
 
@@ -100,25 +107,39 @@
   font-family: "Google Sans Regular", sans-serif;
 }
 
-.slider-dots {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 30px;
-}
-
-.dot {
-  width: 8px;
-  height: 8px;
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  z-index: 5;
+  user-select: none;
+  font-size: 20px;
 }
 
-.dot.active {
+.slider-arrow:hover {
   background: #f2c811;
-  box-shadow: 0 0 8px rgba(242, 200, 17, 0.6);
+  color: #000000;
+  border-color: #f2c811;
+  box-shadow: 0 0 12px rgba(242, 200, 17, 0.4);
+}
+
+.slider-arrow.left {
+  left: 12px;
+}
+
+.slider-arrow.right {
+  right: 12px;
 }
 
 .column-header {
@@ -128,6 +149,10 @@
   margin-bottom: 25px;
   text-transform: uppercase;
   font-family: "Google Sans Medium", sans-serif;
+}
+
+.list-container {
+  width: 100%;
 }
 
 .list-item {
@@ -196,20 +221,60 @@
 
 @media (max-width: 768px) {
   .honors-title {
-    font-size: 32px !important;
-    white-space: normal !important; /* ← allow wrapping */
+    font-size: 28px !important;
+    white-space: normal !important;
     word-break: break-word !important;
   }
 
   .honors-header-container {
-    flex-wrap: wrap !important; /* ← let line wrap below title */
+    flex-wrap: wrap !important;
   }
 
   .honors-header-line {
-    display: none; /* ← hide the line on mobile, saves space */
+    display: none;
   }
 
   .honor-slider-container {
-    padding: 20px !important; /* ← reduce padding while you're here */
+    padding: 20px 20px 80px 20px !important;
+  }
+
+  .slider-card {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 24px !important;
+    min-height: auto !important;
+  }
+
+  .slider-image-column {
+    width: 100% !important;
+    height: 200px !important;
+    padding: 10px !important;
+  }
+
+  .slider-info-column {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .slider-badge {
+    align-self: flex-start !important;
+  }
+
+  .slider-title {
+    font-size: 22px !important;
+  }
+
+  .slider-arrow {
+    top: auto !important;
+    bottom: 16px !important;
+    transform: none !important;
+  }
+
+  .slider-arrow.left {
+    left: calc(50% - 55px) !important;
+  }
+
+  .slider-arrow.right {
+    right: calc(50% - 55px) !important;
   }
 }
