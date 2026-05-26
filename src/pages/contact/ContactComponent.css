@@ -69,29 +69,22 @@
     font-size: 50px;
   }
 }
-
 @media (max-width: 768px) {
-  .contact-heading-text {
-    font-size: 30px;
-    margin-top: 0px;
+  .contact-mail-btn-div {
+    justify-content: center !important;
+    width: 100% !important;
   }
 
-  .address-heading-text {
-    font-size: 20px;
+  .contact-page-btn {
+    transform: none !important; /* ← remove scale, it fights centering */
+    transform-origin: center center !important;
+    width: auto !important;
   }
 
-  .address-heading-div {
-    flex-direction: column;
-    margin-top: 20px;
-  }
-
-  .address-heading-text-div {
-    margin-top: 20px;
-  }
-
-  .contact-header-detail-text {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
+  .contact-page-btn a {
+    width: auto !important;
+    padding: 14px 40px !important; /* ← generous padding instead of scale */
+    box-sizing: border-box !important;
+    display: block !important;
   }
 }

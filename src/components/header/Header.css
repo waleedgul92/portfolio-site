@@ -18,8 +18,8 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  /* background-color: #fff; */
 }
+
 .grey-color {
   color: #868e96;
 }
@@ -27,17 +27,20 @@
 .header li a {
   display: block;
   padding: 20px 20px;
-  /* color: black; */
   text-decoration: none;
+  color: #ffffff; /* Sets base link color to white */
+  outline: none;
+  -webkit-tap-highlight-color: transparent; /* Fixes blue flash highlight on mobile clicks */
+  transition: color 0.2s ease-in-out;
 }
 
-.header li a:active {
-  color: pink;
-}
-
+/* Forces theme yellow when clicked, active, focused, or selected via React Router */
 .header li a:hover,
-.header .menu-btn:hover {
-  /* background-color: #A6E1FA; */
+.header li a:active,
+.header li a:focus,
+.header li a.active {
+  color: #f2c811 !important;
+  background-color: transparent !important;
 }
 
 .header .logo {
@@ -48,11 +51,11 @@
   margin-top: 10px;
   line-height: normal;
 }
+
 .header .logo-name {
   font-family: "Google Sans Regular";
   font-weight: bold;
   padding: 0 10px;
-  /* color: #55198b; */
 }
 
 /* menu */
@@ -151,6 +154,7 @@
     display: none;
   }
 }
+
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
     font-size: 12px;

@@ -9,7 +9,7 @@ export default function Projects(props) {
     <div
       className="main"
       id="projects"
-      style={{ width: "90%", margin: "0 auto", marginTop: "3rem" }}
+      style={{ margin: "0 auto", marginTop: "3rem" }} // ← remove inline width, let CSS control it
     >
       <Fade bottom duration={1000} distance="40px">
         <div className="projects-header-div" style={{ textAlign: "left" }}>
@@ -41,7 +41,7 @@ export default function Projects(props) {
           className="repo-cards-div-main"
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", // ← 260 not 280
             gap: "20px",
           }}
         >

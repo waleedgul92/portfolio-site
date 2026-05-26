@@ -194,12 +194,22 @@
   font-family: "Google Sans Regular", sans-serif;
 }
 
-@media (max-width: 900px) {
-  .slider-card {
-    flex-direction: column;
-    text-align: center;
+@media (max-width: 768px) {
+  .honors-title {
+    font-size: 32px !important;
+    white-space: normal !important; /* ← allow wrapping */
+    word-break: break-word !important;
   }
-  .slider-info-column {
-    text-align: center;
+
+  .honors-header-container {
+    flex-wrap: wrap !important; /* ← let line wrap below title */
+  }
+
+  .honors-header-line {
+    display: none; /* ← hide the line on mobile, saves space */
+  }
+
+  .honor-slider-container {
+    padding: 20px !important; /* ← reduce padding while you're here */
   }
 }

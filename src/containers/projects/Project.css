@@ -26,7 +26,10 @@
     font-size: 30px;
     text-align: center;
   }
+
+  /* Force single column and remove any overflow clipping */
   .repo-cards-div-main {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr !important; /* ← single column on mobile */
+    overflow: visible !important;
   }
 }

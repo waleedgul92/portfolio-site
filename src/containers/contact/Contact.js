@@ -108,7 +108,7 @@ class Contact extends Component {
                 <SocialMedia theme={theme} />
               </div>
 
-              <div>
+              <div style={{ display: "flex", justifyContent: "center" }}>
                 <a
                   href="mailto:hwaleed0035@gmail.com"
                   target="_blank"

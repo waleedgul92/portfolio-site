@@ -37,15 +37,20 @@
 
 @media (max-width: 768px) {
   .contact-mail-btn-div {
-    justify-content: center;
+    justify-content: center !important;
+    width: 100% !important;
   }
+
   .contact-page-btn {
-    transform: scale(1.15);
-    transform-origin: center center;
-    width: 100%;
+    transform: none !important; /* ← remove scale, it fights centering */
+    transform-origin: center center !important;
+    width: auto !important;
   }
+
   .contact-page-btn a {
-    width: 100%;
-    box-sizing: border-box;
+    width: auto !important;
+    padding: 14px 40px !important; /* ← generous padding instead of scale */
+    box-sizing: border-box !important;
+    display: block !important;
   }
 }

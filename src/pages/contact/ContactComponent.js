@@ -6,7 +6,7 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
 import { contactPageData } from "../../portfolio.js";
-import contactMailImg from "../../assests/images/contactMail.png";
+import contactMailImg from "../../assests/images/address_image.svg";
 
 const ContactData = contactPageData.contactSection;
 const addressSection = contactPageData.addressSection;
