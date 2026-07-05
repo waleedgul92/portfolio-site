@@ -663,22 +663,11 @@ const resumeleft = {
     title: ["Experience"],
     data: [
       {
-        title: "Data Science & AI Development",
-        subtitle: "Freelance",
-        date: "2024 - Present",
+        title: "LLM Advisor",
+        subtitle: "Climate Accountability API",
+        date: "Jun 2026 - Present",
         content: [
-          "Architected and deployed production-grade machine learning models with automated inference pipelines on cloud infrastructure.",
-          "Designed advanced RAG applications, autonomous agent workflows, and intelligent document extraction systems.",
-        ],
-      },
-      {
-        title: "Data Analyst Intern",
-        subtitle: "Global Shala",
-        date: "June 2022 - July 2022",
-        content: [
-          "Analyzed campaign performance data to identify underperforming marketing streams and support strategic restructuring decisions.",
-          "Engineered data visualizations that successfully identified and justified the discontinuation of two major ineffective campaigns.",
-          "Optimized resource allocation by reducing expenditure on low-yield campaigns by 18%, shifting organizational focus toward high-impact initiatives.",
+          "Improved the data extraction from documents for relevent metrics",
         ],
       },
     ],
