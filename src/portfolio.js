@@ -663,7 +663,7 @@ const resumeleft = {
     title: ["Experience"],
     data: [
       {
-        title: "LLM Advisor",
+        title: "LLM Engineer",
         subtitle: "Climate Accountability API",
         date: "Jun 2026 - Present",
         content: [
